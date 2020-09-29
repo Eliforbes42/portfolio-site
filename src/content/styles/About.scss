@@ -1,0 +1,97 @@
+@import "./variables";
+
+$profile-picture-length: 300px;
+$profile-picture-radius: $profile-picture-length/2;
+$about-font: "Roboto";
+// $about-font: "Nicholas Bold";
+
+.profile-picture {
+  height: $profile-picture-length;
+  width: auto;
+  border-radius: $profile-picture-radius;
+}
+
+.about-page-container {
+  display: flex;
+  padding: $standard-padding;
+  width: 100%;
+}
+
+.about-description-container {
+  padding-left: $standard-padding;
+  width: 100%;
+}
+
+.about-pane {
+  border: 1px solid $light-border;
+  border-radius: 15px;
+  padding: 5px 5px 8px 5px;
+  margin: 5px;
+  color: $about-pane-text-color;
+  background-color: $app-header-background-color;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  &:hover {
+    background-color: $app-header-background-color-light;
+    transition: all 0.5s linear;
+  }
+}
+
+.about-title-container {
+  display: flex;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.about-title {
+  font: 26px $about-font;
+  border-bottom: 1px solid $about-pane-text-color;
+  padding-bottom: 3px;
+  transition: all 1s linear;
+}
+
+.about-title-collapsed-pane {
+  font: 26px $about-font;
+  border-bottom: 1px solid $app-header-background-color; //Invisible border so visible border doesn't look like it disappears
+  transition: all 1s linear;
+}
+
+.about-content {
+  overflow: hidden;
+  max-height: 1000px;
+  padding-left: 10px;
+  transition: all 2s linear;
+}
+
+.about-content-collapsed {
+  overflow: hidden;
+  max-height: 0px;
+  padding-left: 10px;
+  transition: all 0.5s linear;
+}
+
+.about-text {
+  font-family: $about-font;
+  font-size: 24px;
+  ul {
+    margin-top: 10px;
+    margin-bottom: 0;
+    ul {
+      margin-top: 0px;
+    }
+  }
+}
+
+.chevron {
+  justify-content: flex-end;
+  margin-left: auto;
+  width: fit-content;
+  width: -moz-fit-content;
+  transition: all 0.5s linear;
+}
+
+.rotated {
+  transform: rotate(90deg);
+  transition: all 0.5s linear;
+}

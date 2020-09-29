@@ -1,0 +1,59 @@
+.nav-item {
+  display: flex;
+  width: fit-content;
+  width: --moz-fit-content;
+  height: calc(100% - 2px);
+  align-items: center;
+  padding: 0 15px 0 15px;
+  border-bottom: 2px solid #181c24;
+  transition: all 0.5s linear;
+  &:hover {
+    background-color: $app-background-color;
+    border-bottom: 2px solid $app-background-color;
+    transition: all 0.5s linear;
+  }
+}
+
+.nav-item-selected {
+  border-bottom: 2px solid $app-text-color;
+  &:hover {
+    border-bottom: 2px solid $app-text-color;
+  }
+}
+
+.nav-align-right {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding-right: $standard-padding;
+  width: fit-content;
+  width: --moz-fit-content;
+}
+.nav-link {
+  color: $app-text-color;
+  text-decoration: none;
+}
+
+.nav-logo-text {
+  font-family: "Nicholas Bold";
+  font-size: 50px;
+  color: $app-text-color;
+  width: fit-content;
+  width: -moz-fit-content;
+  height: fit-content;
+  height: -moz-fit-content;
+}
+
+.nav-logo {
+  height: 50px;
+  padding: 5px;
+}
+
+.logo-nav-item {
+  width: fit-content;
+  width: --moz-fit-content;
+  border-bottom: 2px solid $app-text-color;
+  padding-right: 8px;
+  text-decoration: none;
+  outline: 0;
+}

@@ -1,0 +1,92 @@
+@import "./variables";
+
+.app-footer {
+  background-color: #181c24;
+  color: #da7171;
+
+  height: $footer-height;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  font-size: calc(2px + 2vmin);
+  font-family: "Nicholas Bold";
+
+  position: fixed;
+  bottom: 0;
+  transition: 1s;
+}
+
+.app-footer-content {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  left: 39px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+
+.return-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: $standard-padding;
+}
+
+.footer-link {
+  display: flex;
+  color: #da7171;
+  padding: 5px;
+  border-radius: 3px;
+  transition: all 0.5s linear;
+  a {
+    margin: 0 10px;
+    color: #da7171;
+    text-decoration: none;
+  }
+  &:hover {
+    background-color: #da7171;
+    svg polygon,
+    svg line {
+      fill: #282c34;
+      stroke: #da7171;
+    }
+    a,
+    .fabric-logo {
+      color: #282c34;
+      text-decoration: none;
+    }
+    transition: all 0.5s linear;
+  }
+}
+
+.plane-logo {
+  padding-right: 3px;
+  align-items: center;
+  svg {
+    height: calc(2px + 2vmin);
+  }
+  svg polygon,
+  svg line {
+    fill: #da7171;
+    transition: all 0.5s linear;
+  }
+  transition: all 0.5s linear;
+}
+
+.fabric-logo {
+  display: flex;
+  align-items: center;
+  color: #da7171;
+  font-size: calc(5px + 2vmin);
+  height: calc(5px + 2vmin);
+  width: calc(5px + 2vmin);
+  transition: all 0.5s linear;
+}

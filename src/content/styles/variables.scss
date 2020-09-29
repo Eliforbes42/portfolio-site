@@ -1,0 +1,19 @@
+//Colors
+$app-background-color: #282c34;
+$app-background-color-light: #373d47;
+$app-header-background-color: #181c24;
+$app-header-background-color-light: #1b1f28;
+$app-header-background-color-lighter: #3e4555;
+$app-text-color: #da7171;
+$about-pane-text-color: #da7171; //#e39292 for AAA a11y
+$about-pane-background-color: #181c24;
+// $light-border: rgba(255, 255, 255, 0.42);
+$light-border: #373d47;
+// $light-border: #da717159;
+
+//Spacing
+$standard-padding: 25px;
+
+//Heights
+$footer-height: 40px;
+$app-height: 100vh; //calc(100vh - #{$footer-height}); //Use interpolation to process variable

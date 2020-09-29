@@ -1,0 +1,102 @@
+@import "./variables";
+
+.front-page {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: $app-background-color;
+  background-image: url("./FrontPageBG.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  color: $app-text-color;
+  font: 26px "Consolas";
+
+  opacity: 100;
+  transition: opacity 1s linear;
+}
+
+.front-page-hidden {
+  background-color: $app-background-color;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  transition: all 1s linear;
+
+  max-height: 0px;
+  opacity: 0;
+  transition: opacity 0s linear;
+}
+
+.front-page-terminal {
+  background-color: $app-background-color-light;
+  padding: 0 15px 15px 15px;
+  border-radius: 8px;
+}
+
+.front-page-terminal-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  padding: 10px 0;
+  .front-page-terminal-nav-item {
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+    margin: 0 3px;
+    background-color: $app-text-color;
+  }
+  .front-page-terminal-nav-item-icon {
+    color: $app-background-color-light;
+    background-color: $app-text-color;
+    font-size: 9px;
+    padding-left: 4px;
+    padding-top: 4px;
+    margin: 0 2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
+  }
+}
+
+.blink1 {
+  padding-left: 8px;
+  color: $app-text-color;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.blink2 {
+  padding-left: 8px;
+  color: $app-text-color;
+  opacity: 1;
+  transition: 0.25s;
+}
+
+.front-page-icon {
+  display: flex;
+  background-color: $app-background-color-light;
+  color: $app-text-color;
+  margin-top: 25px;
+
+  //Center on page
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  //Center Icon in Bubble
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+
+  transition: 1s;
+
+  &:hover {
+    color: $app-background-color;
+    background-color: $app-text-color;
+    cursor: pointer;
+    transition: 1s;
+  }
+}
