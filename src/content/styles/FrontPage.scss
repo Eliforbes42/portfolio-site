@@ -13,8 +13,12 @@
   color: $app-text-color;
   font: 26px "Consolas";
 
+  width: 100%;
+  height: $app-height;
+  position: absolute;
+  bottom: 0;
   opacity: 100;
-  transition: opacity 1s linear;
+  transition: 1s;
 }
 
 .front-page-hidden {
@@ -23,9 +27,10 @@
   color: white;
   transition: all 1s linear;
 
-  max-height: 0px;
+  bottom: 100vh;
+  overflow: hidden;
   opacity: 0;
-  transition: opacity 0s linear;
+  transition: 1s;
 }
 
 .front-page-terminal {

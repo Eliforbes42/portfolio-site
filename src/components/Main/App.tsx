@@ -83,7 +83,7 @@ function App() {
 
   return (
     <>
-      <div className={!showMainContent ? "front-page" : "front-page-hidden"}>{frontPage}</div>
+      <div className={!showMainContent ? "front-page" : "front-page-hidden"}>{!showMainContent && frontPage}</div>
       <div className={showMainContent ? "app" : "app-hidden"}>
         <Router>{mainContent}</Router>
         <div className={"app-spacer"} />
