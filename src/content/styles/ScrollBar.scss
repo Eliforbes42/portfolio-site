@@ -1,23 +1,25 @@
-// ::-webkit-scrollbar {
-//   width: 10px;
-// }
+//Chrome & Edge
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-// ::-webkit-scrollbar-track {
-//   background: $app-header-background-color;
-//   z-index: 1;
-// }
+::-webkit-scrollbar-track {
+  background: $app-header-background-color;
+  z-index: 1;
+}
 
-// ::-webkit-scrollbar-thumb {
-//   background: $app-header-background-color-lighter;
-//   border-radius: 5px;
-// }
+::-webkit-scrollbar-thumb {
+  background: $app-header-background-color-lighter;
+  border-radius: 5px;
+}
 
-// ::-webkit-scrollbar-thumb:hover {
-//   background: #555;
-// }
+::-webkit-scrollbar-thumb:hover {
+  background: $app-header-background-color-lightest;
+}
 
-// html,
-// body {
-//   scrollbar-color: $app-header-background-color-lighter;
-//   scrollbar-track-color: white;
-// }
+//Firefox
+html {
+  scrollbar-color: $app-header-background-color-lighter $app-header-background-color;
+  scrollbar-width: thin;
+  overflow-y: scroll;
+}
