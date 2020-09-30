@@ -1,8 +1,8 @@
 @import "./variables";
 
 .app-footer {
-  background-color: #181c24;
-  color: #da7171;
+  background-color: $app-header-background-color;
+  color: $app-text-color;
 
   height: $footer-height;
   width: 100%;
@@ -38,29 +38,51 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: $standard-padding;
+
+  .ms-Checkbox.is-checked.is-enabled {
+    .ms-Checkbox-checkbox {
+      .ms-Checkbox-checkmark {
+        color: $app-header-background-color;
+      }
+      background-color: $app-text-color;
+      border-color: rgb(50, 49, 48);
+      &:hover {
+        background-color: $app-text-color-dark;
+      }
+    }
+  }
+  .ms-Checkbox.is-enabled {
+    .ms-Checkbox-checkbox {
+      .ms-Checkbox-checkmark {
+        color: $app-text-color;
+      }
+      background-color: $app-header-background-color;
+      border-color: rgb(50, 49, 48);
+    }
+  }
 }
 
 .footer-link {
   display: flex;
-  color: #da7171;
+  color: $app-text-color;
   padding: 5px;
   border-radius: 3px;
-  transition: all 0.5s linear;
+  transition: 0.5s;
   a {
     margin: 0 10px;
-    color: #da7171;
+    color: $app-text-color;
     text-decoration: none;
   }
   &:hover {
-    background-color: #da7171;
+    background-color: $app-text-color;
     svg polygon,
     svg line {
-      fill: #282c34;
-      stroke: #da7171;
+      fill: $app-background-color;
+      stroke: $app-text-color;
     }
     a,
     .fabric-logo {
-      color: #282c34;
+      color: $app-background-color;
       text-decoration: none;
     }
     transition: all 0.5s linear;
@@ -75,7 +97,7 @@
   }
   svg polygon,
   svg line {
-    fill: #da7171;
+    fill: $app-text-color;
     transition: all 0.5s linear;
   }
   transition: all 0.5s linear;
@@ -84,7 +106,7 @@
 .fabric-logo {
   display: flex;
   align-items: center;
-  color: #da7171;
+  color: $app-text-color;
   font-size: calc(5px + 2vmin);
   height: calc(5px + 2vmin);
   width: calc(5px + 2vmin);

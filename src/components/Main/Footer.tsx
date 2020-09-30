@@ -1,9 +1,11 @@
-import { FontIcon } from "office-ui-fabric-react";
+import { Checkbox, FontIcon } from "office-ui-fabric-react";
 import React from "react";
 import PaperPlane from "../Misc/MailLogo";
 
 interface Props {
   setMainContentShow: () => void;
+  togglePageScrollTransition: () => void;
+  useScrollTransitions: boolean;
 }
 
 const Footer = (props: Props) => {
@@ -29,6 +31,11 @@ const Footer = (props: Props) => {
         </div>
       </div>
       <div className={"return-links"}>
+        <Checkbox
+          title="Page Transition on Scroll"
+          checked={props.useScrollTransitions}
+          onChange={props.togglePageScrollTransition}
+        />
         <div className={"footer-link return"} onClick={props.setMainContentShow}>
           <FontIcon iconName="DoubleChevronUp8" className={"fabric-logo"} />
         </div>
