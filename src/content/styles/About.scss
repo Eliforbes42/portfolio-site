@@ -2,23 +2,51 @@
 
 $profile-picture-length: 300px;
 $profile-picture-radius: $profile-picture-length/2;
-$about-font: "Roboto";
-// $about-font: "Nicholas Bold";
+$about-font: "Inconsolata";
+$about-title-font: bold 26px "Catamaran";
+$about-text-font: 24px $about-font;
 
 .profile-picture {
+  display: flex;
   height: $profile-picture-length;
+  justify-content: center;
+  margin: 0 auto;
   width: auto;
   border-radius: $profile-picture-radius;
+  justify-content: center;
+}
+
+.profile-picture-container {
+  width: calc(#{$profile-picture-length} + 100px);
+  height: 100%;
+  padding: $standard-padding;
+  background-color: $app-header-background-color;
+  box-shadow: 1px 2px 2px black;
+}
+
+.description-title {
+  font: $about-title-font;
+  color: $about-pane-text-color;
+  width: 100%;
+  // text-align: center;
+  padding-bottom: 3px;
+  margin: 10px 0;
+  border-bottom: 1px solid $about-pane-text-color;
+}
+.description-text {
+  font: $about-text-font;
+  color: $about-pane-text-color;
+  width: 100%;
 }
 
 .about-page-container {
   display: flex;
-  padding: $standard-padding;
   width: 100%;
+  height: 100%;
 }
 
 .about-description-container {
-  padding-left: $standard-padding;
+  padding: $standard-padding;
   width: 100%;
 }
 
@@ -35,63 +63,63 @@ $about-font: "Roboto";
     background-color: $app-header-background-color-light;
     transition: all 0.5s linear;
   }
-}
 
-.about-title-container {
-  display: flex;
-  padding-top: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
+  .about-title-container {
+    display: flex;
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
 
-.about-title {
-  font: 26px $about-font;
-  border-bottom: 1px solid $about-pane-text-color;
-  padding-bottom: 3px;
-  transition: all 1s linear;
-}
-
-.about-title-collapsed-pane {
-  font: 26px $about-font;
-  border-bottom: 1px solid $app-header-background-color; //Invisible border so visible border doesn't look like it disappears
-  transition: all 1s linear;
-}
-
-.about-content {
-  overflow: hidden;
-  max-height: 1000px;
-  padding-left: 10px;
-  transition: all 2s linear;
-}
-
-.about-content-collapsed {
-  overflow: hidden;
-  max-height: 0px;
-  padding-left: 10px;
-  transition: all 0.5s linear;
-}
-
-.about-text {
-  font-family: $about-font;
-  font-size: 24px;
-  ul {
-    margin-top: 10px;
-    margin-bottom: 0;
-    ul {
-      margin-top: 0px;
+    .about-title,
+    .about-title-collapsed-pane {
+      font: $about-title-font;
+      padding: 3px 0;
+      transition: 1s;
     }
+    .about-title {
+      border-bottom: 1px solid $about-pane-text-color;
+    }
+    .about-title-collapsed-pane {
+      border-bottom: 1px solid $app-header-background-color; //Invisible border so visible border doesn't look like it disappears
+    }
+  }
+  .about-content,
+  .about-content-collapsed {
+    padding-left: 10px;
+    overflow: hidden;
+    transition: 1s;
+    .about-text {
+      font: $about-text-font;
+      ul {
+        margin-top: 10px;
+        margin-bottom: 0;
+        ul {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+  .about-content {
+    max-height: 1000px;
+  }
+  .about-content-collapsed {
+    max-height: 0px;
   }
 }
 
 .chevron {
+  padding: 3px;
   justify-content: flex-end;
+  align-items: center;
   margin-left: auto;
   width: fit-content;
   width: -moz-fit-content;
-  transition: all 0.5s linear;
+  height: fit-content;
+  height: -moz-fit-content;
+  transition: 1s;
 }
 
 .rotated {
   transform: rotate(90deg);
-  transition: all 0.5s linear;
+  transition: 1s;
 }
