@@ -16,48 +16,46 @@
   position: fixed;
   bottom: 0;
   transition: 1s;
-}
 
-.app-footer-content {
-  margin-right: 10px;
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  left: 39px;
-}
+  .app-footer-content {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    left: 39px;
 
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-
-.return-links {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding-right: $standard-padding;
-
-  .ms-Checkbox.is-checked.is-enabled {
-    .ms-Checkbox-checkbox {
-      .ms-Checkbox-checkmark {
-        color: $app-header-background-color;
-      }
-      background-color: $app-text-color;
-      border-color: rgb(50, 49, 48);
-      &:hover {
-        background-color: $app-text-color-dark;
-      }
+    .footer-links {
+      display: flex;
+      align-items: center;
     }
   }
-  .ms-Checkbox.is-enabled {
-    .ms-Checkbox-checkbox {
-      .ms-Checkbox-checkmark {
-        color: $app-text-color;
+  .return-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: $standard-padding;
+
+    .ms-Checkbox.is-checked.is-enabled {
+      .ms-Checkbox-checkbox {
+        .ms-Checkbox-checkmark {
+          color: $app-header-background-color;
+        }
+        background-color: $app-text-color;
+        border-color: rgb(50, 49, 48);
+        &:hover {
+          background-color: $app-text-color-dark;
+        }
       }
-      background-color: $app-header-background-color;
-      border-color: rgb(50, 49, 48);
+    }
+    .ms-Checkbox.is-enabled {
+      .ms-Checkbox-checkbox {
+        .ms-Checkbox-checkmark {
+          color: $app-text-color;
+        }
+        background-color: $app-header-background-color;
+        border-color: rgb(50, 49, 48);
+      }
     }
   }
 }
