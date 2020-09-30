@@ -18,7 +18,7 @@ const Header = (props: Props) => {
   return (
     <header className="app-header">
       <Link to="/" className="logo-nav-item">
-        <img src="./ForbesLogo.png" className={"nav-logo"} alt={"Eli Forbes"} />
+        <img src="./CatamaranLogo.png" className={"nav-logo"} alt={"Eli Forbes"} />
       </Link>
       <div className="nav-align-right">{navItemsInternal}</div>
     </header>
