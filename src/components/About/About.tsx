@@ -1,7 +1,6 @@
 import React from "react";
-import profilePicture from "../../content/images/profilePicture.jpg";
 import AboutPane from "./AboutPane";
-
+import Overview from "./Overview";
 interface Props {}
 
 const About = (props: Props) => {
@@ -17,20 +16,15 @@ const About = (props: Props) => {
     { area: "General", skills: ["PowerShell", "Git", "Azure DevOps", "Atlassian DevOps"] },
   ];
   const qualities = [
-    "Critical Thinker",
     "Passionate",
     "Resourceful",
-    "Fast Learner",
     "Reliable",
+    "Fast Learner",
     "Team Player",
+    "Critical Thinker",
     "Active Communicator",
   ];
   const aboutContent = [
-    {
-      title: "Overview",
-      content: `Eli is an experienced Software Engineer with a passion for creating smooth visual experiences, a keen interest in learning various technologies, and a love
-    for coding in general.`,
-    },
     {
       title: "Education",
       content: "Eli holds a Bachelor of Science Degree focused in Computer Science from Washington State University.",
@@ -114,7 +108,7 @@ const About = (props: Props) => {
 
   return (
     <div className="about-page-container">
-      <img className="profile-picture" src={profilePicture} alt="Eli Forbes" />
+      <Overview />
       <div className="about-description-container">
         {aboutContent.map((content) => (
           <AboutPane {...content} />
