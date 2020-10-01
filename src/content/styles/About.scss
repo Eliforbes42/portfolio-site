@@ -84,7 +84,8 @@
   transition: all 0.5s linear;
   cursor: pointer;
   &:hover {
-    background-color: $app-header-background-color-light;
+    background-color: $app-background-color;
+    border: 1px solid $app-text-color-50;
     transition: all 0.5s linear;
   }
 
