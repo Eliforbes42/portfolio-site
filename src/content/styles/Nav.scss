@@ -1,3 +1,26 @@
+.ms-ContextualMenu-item {
+  background-color: $app-background-color-light;
+  color: $app-text-color;
+  border-color: $app-text-color;
+  .ms-ContextualMenu-link:hover {
+    background-color: $app-text-color;
+    color: $app-background-color;
+  }
+}
+.ms-ContextualMenu {
+  background-color: $app-background-color;
+}
+.ms-ContextualMenu-Callout {
+  margin-right: 10px;
+}
+
+.document-menu-button {
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto 0 auto auto;
+  padding-right: 25px;
+}
+
 .app-header {
   background-color: #181c24;
   color: white;
@@ -7,6 +30,12 @@
   display: flex;
   font: bold calc(10px + 2vmin) "Catamaran";
   box-shadow: 1px 1px 2px black;
+
+  .ms-Button--hasMenu {
+    background-color: $app-background-color;
+    color: $app-text-color;
+    border-color: $app-text-color;
+  }
 
   .logo-nav-item {
     width: fit-content;
