@@ -6,7 +6,7 @@ interface Props {
   title: string;
 }
 
-const DocumentListPane = (props: Props) => {
+const DocumentPane = (props: Props) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const expandContainer = () => {
@@ -19,11 +19,11 @@ const DocumentListPane = (props: Props) => {
         <div className={isExpanded ? "document-title" : "document-title-collapsed-pane"}>{props.title}</div>
         <Chevron isExpanded={isExpanded} />
       </div>
-      <div className={"document-title-container"}>
+      <div>
         {isExpanded ? (
-          <>
+          <div className={"document-title-container"}>
             <PDFDocument file={`./${props.title.toLowerCase()}.pdf`} />
-          </>
+          </div>
         ) : (
           <></>
         )}
@@ -32,4 +32,4 @@ const DocumentListPane = (props: Props) => {
   );
 };
 
-export default DocumentListPane;
+export default DocumentPane;

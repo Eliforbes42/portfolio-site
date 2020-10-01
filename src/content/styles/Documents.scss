@@ -30,7 +30,6 @@ $description-font: "Nicholas Bold";
   background-color: $app-header-background-color;
   transition: all 0.5s linear;
   cursor: pointer;
-  height: fit-content;
   &:hover {
     background-color: $app-header-background-color-light;
     transition: all 0.5s linear;
@@ -42,33 +41,33 @@ $description-font: "Nicholas Bold";
   padding-top: 3px;
   padding-left: 10px;
   padding-right: 10px;
+
+  .document-title,
+  .document-title-collapsed-pane {
+    font: $about-title-font;
+    transition: 1s;
+  }
+  .document-title {
+    padding: 3px 0;
+    border-bottom: 1px solid $about-pane-text-color;
+  }
+  .document-title-collapsed-pane {
+    padding-top: 3px;
+    border-bottom: 1px solid $app-header-background-color; //Invisible border so visible border doesn't look like it disappears
+  }
 }
 
-.document-title {
-  font: 26px $description-font;
-  border-bottom: 1px solid $about-pane-text-color;
-  padding-bottom: 3px;
-  transition: all 0.5s linear;
-}
-
-.document-title-collapsed-pane {
-  font: 26px $description-font;
-  border-bottom: 1px solid $app-header-background-color; //Invisible border so visible border doesn't look like it disappears
-  transition: all 0.5s linear;
-}
-
-.document-content {
+.document-content,
+.document-content-collapsed {
   overflow: hidden;
-  max-height: 1000px;
   padding-left: 10px;
   transition: all 2s linear;
 }
-
+.document-content {
+  max-height: 1000px;
+}
 .document-content-collapsed {
-  overflow: hidden;
   max-height: 0px;
-  padding-left: 10px;
-  transition: all 0.5s linear;
 }
 
 .document-text {
