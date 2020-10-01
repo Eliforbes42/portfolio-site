@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Chevron from "../Misc/Chevron";
-import PDFDocument from "./PDFDocument";
 
 interface Props {
   title: string;
@@ -14,19 +12,9 @@ const DocumentPane = (props: Props) => {
   };
 
   return (
-    <div className={"document-pane"} onClick={expandContainer}>
-      <div className={"document-title-container"}>
-        <div className={isExpanded ? "document-title" : "document-title-collapsed-pane"}>{props.title}</div>
-        <Chevron isExpanded={isExpanded} />
-      </div>
-      <div>
-        {isExpanded ? (
-          <div className={"document-title-container"}>
-            <PDFDocument file={`./${props.title.toLowerCase()}.pdf`} />
-          </div>
-        ) : (
-          <></>
-        )}
+    <div className={"about-pane"} onClick={expandContainer}>
+      <div className={"about-title-container"}>
+        <div className={"about-title-collapsed-pane"}>{props.title}</div>
       </div>
     </div>
   );

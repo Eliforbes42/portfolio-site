@@ -44,6 +44,11 @@
     .about-title-collapsed-pane {
       border-bottom: 1px solid $app-header-background-color; //Invisible border so visible border doesn't look like it disappears
     }
+    &:hover {
+      .about-title-collapsed-pane {
+        border-bottom: 1px solid $app-background-color; //Invisible border so visible border doesn't look like it disappears
+      }
+    }
   }
   .about-content,
   .about-content-collapsed {
