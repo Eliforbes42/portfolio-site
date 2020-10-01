@@ -49,11 +49,11 @@ body {
 
 .app-main {
   display: flex;
-  height: 100%;
+  height: calc(100% - #{$header-height} - #{$footer-height});
 }
 
 .app-spacer {
-  height: 50px;
+  height: $footer-height;
   transition: 1s;
 }
 

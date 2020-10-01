@@ -54,7 +54,7 @@
           color: $app-text-color;
         }
         background-color: $app-header-background-color;
-        border-color: rgb(50, 49, 48);
+        border-color: $app-text-color;
       }
     }
   }
@@ -109,4 +109,7 @@
   height: calc(5px + 2vmin);
   width: calc(5px + 2vmin);
   transition: all 0.5s linear;
+  &:hover {
+    color: $app-header-background-color;
+  }
 }
