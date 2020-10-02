@@ -58,12 +58,15 @@
   background-color: $app-nav-button-color;
   color: $app-header-background-color;
   border-color: $app-nav-button-color;
-  transition: 1s;
+  transition: 0.5as;
 
   &:hover {
-    background-color: $button-hover-color;
-    border-color: $button-hover-color;
-    transition: 1s;
+    background-color: $app-header-background-color;
+    border-color: $app-nav-button-color;
+    color: $app-nav-button-color;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12),
+      0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
   }
 }
 .ms-ContextualMenu-Callout {
@@ -72,12 +75,20 @@
   .ms-ContextualMenu-item {
     background-color: $app-nav-button-color;
     color: $app-text-color;
-    transition: 1s;
+    transition: 0.5s;
+    padding: 15px;
 
-    .ms-ContextualMenu-link:hover {
-      background-color: $button-hover-color;
-      color: $app-background-color;
-      transition: 1s;
+    .ms-ContextualMenu-itemText {
+      padding: 0 10px;
+      border-radius: 3px;
+      text-align: center;
+      &:hover {
+        background-color: $app-header-background-color;
+        color: $app-nav-button-color;
+        transition: 0.5s;
+        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12),
+          0 5px 5px -3px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 }
