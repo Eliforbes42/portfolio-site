@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import resume from "../content/documents/resume.pdf";
 import "../../content/styles/App.scss";
 import About from "../About/About";
-import Documents from "../Documents/Documents";
 import Footer from "./Footer";
 import FrontPage from "./FrontPage";
 import Header from "./Header";
@@ -44,11 +43,6 @@ function App() {
         <Route path="/" exact>
           <Main>
             <About />
-          </Main>
-        </Route>
-        <Route path={"/documents"} exact>
-          <Main>
-            <Documents />
           </Main>
         </Route>
       </Switch>

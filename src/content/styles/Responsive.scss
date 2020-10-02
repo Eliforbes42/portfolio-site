@@ -1,0 +1,70 @@
+@media only screen and (max-width: 1024px) {
+  .front-page {
+    background-size: contain;
+    background-repeat: round;
+  }
+
+  .app,
+  .app-main {
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .app-spacer {
+    height: calc(#{$footer-height} + #{$standard-padding});
+  }
+
+  .app-header {
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100vw;
+    max-width: 100vw;
+    justify-content: flex-start;
+
+    .document-menu-button {
+      justify-content: flex-start;
+      align-items: center;
+      margin-left: 0px;
+      padding: 15px;
+    }
+  }
+
+  .app-footer {
+    width: 100vw;
+    flex-wrap: nowrap;
+    .app-footer-content {
+      padding-top: 5px;
+      left: 0;
+      margin: 0;
+      width: fit-content;
+      justify-content: flex-start;
+    }
+    .return-links {
+      justify-content: flex-end;
+      margin-left: auto;
+    }
+  }
+
+  .about-page-container,
+  .about-page-sub-container {
+    width: 100vw;
+    max-width: 100vw;
+    display: block;
+
+    .description-container {
+      padding-bottom: $standard-padding;
+    }
+  }
+  .about-description-container {
+    width: calc(100vw - (#{$standard-padding}* 2));
+  }
+
+  .profile-picture-container {
+    width: calc(100vw - (#{$standard-padding}* 2));
+  }
+  .profile-picture-container.no-content,
+  .profile-picture-container-collapsed.no-content {
+    height: 0;
+  }
+}
