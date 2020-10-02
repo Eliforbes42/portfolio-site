@@ -22,9 +22,6 @@ const FrontPage = (props: Props) => {
           <span className={"front-page-terminal-nav-item"} />
           <span className={"front-page-terminal-nav-item"} />
           <span className={"front-page-terminal-nav-item"} />
-          {/* <FontIcon iconName={"ChromeMinimize"} className={"front-page-terminal-nav-item-icon"} />
-          <FontIcon iconName={"ChromeRestore"} className={"front-page-terminal-nav-item-icon"} />
-          <FontIcon iconName={"ChromeClose"} className={"front-page-terminal-nav-item-icon"} /> */}
         </div>
         <div className={"front-page-terminal"}>
           {"E:\\Forbes> A developer with simplicity in mind"}
