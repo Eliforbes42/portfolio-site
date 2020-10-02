@@ -16,10 +16,10 @@ function App() {
 
   const handleScroll = useCallback(
     (e) => {
-      if (e.deltaY > 0 && !e.ctrlKey) {
+      if (e.deltaY > 0 && !e.ctrlKey && !e.shiftKey) {
         setShowMainContent(true);
       }
-      if (e.deltaY < 0 && window.pageYOffset === 0 && !e.ctrlKey) {
+      if (e.deltaY < 0 && window.pageYOffset === 0 && !e.ctrlKey && !e.shiftKey) {
         setShowMainContent(false);
       }
     },
