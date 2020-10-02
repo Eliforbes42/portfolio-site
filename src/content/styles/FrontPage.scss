@@ -2,16 +2,8 @@
 
 .front-page {
   display: flex;
-  height: 100vh;
-  width: 100%;
   align-items: center;
   justify-content: center;
-  background-color: $app-background-color;
-  background-image: url("./FrontPageBG.svg");
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  color: $app-text-color;
-  font: 26px "Consolas";
 
   width: 100%;
   height: $app-height;
@@ -20,8 +12,17 @@
   opacity: 100;
   transition: 1s;
 
+  height: 100vh;
+  width: 100%;
+  background-color: $front-page-background-color;
+  background-image: url("../images/FrontPageBG.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  color: $app-text-color;
+  font: 26px "Consolas";
+
   .front-page-terminal {
-    background-color: $app-background-color-light;
+    background-color: $front-page-terminal-background-color;
     padding: 0 15px 15px 15px;
     border-radius: 8px;
 
@@ -30,6 +31,7 @@
       justify-content: flex-end;
       margin-left: auto;
       padding: 10px 0;
+
       .front-page-terminal-nav-item {
         width: 14px;
         height: 14px;
@@ -37,36 +39,25 @@
         margin: 0 3px;
         background-color: $app-text-color;
       }
-      .front-page-terminal-nav-item-icon {
-        color: $app-background-color-light;
-        background-color: $app-text-color;
-        font-size: 9px;
-        padding-left: 4px;
-        padding-top: 4px;
-        margin: 0 2px;
-        width: 14px;
-        height: 14px;
-        border-radius: 7px;
-      }
-    }
-    .blink1 {
-      padding-left: 8px;
-      color: $app-text-color;
-      opacity: 0;
-      transition: 0.25s;
     }
 
+    .blink1,
     .blink2 {
       padding-left: 8px;
       color: $app-text-color;
-      opacity: 1;
       transition: 0.25s;
+    }
+    .blink1 {
+      opacity: 0;
+    }
+    .blink2 {
+      opacity: 1;
     }
   }
 
   .front-page-icon {
     display: flex;
-    background-color: $app-background-color-light;
+    background-color: $front-page-terminal-background-color;
     color: $app-text-color;
     margin-top: 25px;
 
@@ -81,12 +72,11 @@
     width: 50px;
     height: 50px;
     border-radius: 25px;
-
     transition: 1s;
 
     &:hover {
       color: $app-background-color;
-      background-color: $app-text-color;
+      background-color: $app-hover-color;
       cursor: pointer;
       transition: 1s;
     }

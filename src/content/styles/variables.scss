@@ -1,19 +1,36 @@
+//Main Colors
+$light-shade: #f5f3f0;
+$light-accent: #bba786;
+$main-brand: #496875;
+$dark-accent: #e8a42b;
+$dark-shade: #3f5062;
+
+// $light-shade: #f6f7f7;
+// $light-accent: #a6b6ba;
+// $main-brand: #ec9674;
+// $dark-accent: #55ada8;
+// $dark-shade: #453f4d;
+
 //Colors
-$app-background-color: #282c34;
-$app-background-color-light: #373d47;
-$app-header-background-color: #181c24;
-$app-header-background-color-light: #1b1f28;
-$app-header-background-color-lighter: #3e4555;
-$app-header-background-color-lightest: #4e576b;
-$app-text-color: #da7171;
-$app-text-color-50: #da717177;
-$app-text-color-dark: #b85f5f;
-$app-text-color-light: #e39292;
-$about-pane-text-color: #da7171; //#e39292 for AAA a11y
-$about-pane-background-color: #181c24;
-// $light-border: rgba(255, 255, 255, 0.42);
-$light-border: #373d47;
-// $light-border: #da717159;
+$front-page-background-color: $dark-shade;
+$front-page-terminal-background-color: $light-shade;
+$app-background-color: $dark-shade;
+$app-header-background-color: $main-brand;
+$about-pane-background-color: $light-shade;
+$overview-pane-background-color: $light-shade;
+
+$app-nav-button-color: $light-shade;
+$app-button-color: $light-shade;
+
+$app-text-color: $dark-shade;
+$about-pane-text-color: $dark-shade;
+
+$app-hover-color: $light-accent;
+$button-hover-color: $dark-accent;
+$about-hover-color: $dark-accent;
+
+$app-scrollbar-color: $light-accent;
+$app-scrollbar-track-color: $light-shade;
 
 //Spacing
 $standard-padding: 25px;
@@ -21,7 +38,7 @@ $standard-padding: 25px;
 //Heights
 $header-height: 83px;
 $footer-height: 40px;
-$app-height: 100vh; //calc(100vh - #{$footer-height}); //Use interpolation to process variable
+$app-height: 100vh;
 $profile-picture-length: 300px;
 $profile-picture-radius: $profile-picture-length/2;
 

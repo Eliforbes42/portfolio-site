@@ -4,22 +4,22 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: $app-header-background-color;
+  background: $app-scrollbar-track-color;
   z-index: 1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: $app-header-background-color-lighter;
+  background: $app-scrollbar-color;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: $app-header-background-color-lightest;
+  background: $app-hover-color;
 }
 
 //Firefox
 html {
-  scrollbar-color: $app-header-background-color-lighter $app-header-background-color;
+  scrollbar-color: $app-scrollbar-color $app-scrollbar-track-color;
   scrollbar-width: thin;
   overflow-y: scroll;
 }

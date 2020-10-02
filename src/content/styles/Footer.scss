@@ -30,6 +30,7 @@
       align-items: center;
     }
   }
+
   .return-links {
     display: flex;
     align-items: center;
@@ -41,20 +42,26 @@
         .ms-Checkbox-checkmark {
           color: $app-header-background-color;
         }
-        background-color: $app-text-color;
-        border-color: rgb(50, 49, 48);
+        background-color: $app-button-color;
+        border-color: $app-button-color;
+
         &:hover {
-          background-color: $app-text-color-dark;
+          background-color: $button-hover-color;
+          border-color: $button-hover-color;
+
+          .ms-Checkbox-checkmark {
+            color: $app-text-color;
+          }
         }
       }
     }
     .ms-Checkbox.is-enabled {
       .ms-Checkbox-checkbox {
         .ms-Checkbox-checkmark {
-          color: $app-text-color;
+          color: $app-button-color;
         }
         background-color: $app-header-background-color;
-        border-color: $app-text-color;
+        border-color: $app-button-color;
       }
     }
   }
@@ -62,54 +69,57 @@
 
 .footer-link {
   display: flex;
-  color: $app-text-color;
+  color: $app-button-color;
   padding: 5px;
   border-radius: 3px;
   transition: 0.5s;
+
   a {
     margin: 0 10px;
-    color: $app-text-color;
+    color: $app-button-color;
     text-decoration: none;
   }
+
   &:hover {
-    background-color: $app-text-color;
+    background-color: $button-hover-color;
+    transition: 0.5s;
+
     svg polygon,
     svg line {
-      fill: $app-background-color;
-      stroke: $app-text-color;
+      fill: $app-text-color;
+      stroke: $app-hover-color;
     }
+
     a,
     .fabric-logo {
-      color: $app-background-color;
+      color: $app-text-color;
       text-decoration: none;
     }
-    transition: all 0.5s linear;
   }
 }
 
 .plane-logo {
   padding-right: 3px;
   align-items: center;
+  transition: 0.5s;
+
   svg {
     height: calc(2px + 2vmin);
   }
   svg polygon,
   svg line {
-    fill: $app-text-color;
-    transition: all 0.5s linear;
+    fill: $app-button-color;
+    stroke: $app-header-background-color;
+    transition: 0.5s;
   }
-  transition: all 0.5s linear;
 }
 
 .fabric-logo {
   display: flex;
   align-items: center;
-  color: $app-text-color;
+  color: $app-button-color;
   font-size: calc(5px + 2vmin);
   height: calc(5px + 2vmin);
   width: calc(5px + 2vmin);
-  transition: all 0.5s linear;
-  &:hover {
-    color: $app-header-background-color;
-  }
+  transition: 0.5s;
 }

@@ -1,11 +1,9 @@
 @import "./About";
-@import "./Documents";
 @import "./Footer";
 @import "./FrontPage";
 @import "./index";
 @import "./Nav";
 @import "./Overview";
-@import "./Pdf";
 @import "./ScrollBar";
 @import "./variables";
 
@@ -19,12 +17,13 @@
 }
 
 html,
-body {
+body,
+.app,
+.app-hidden {
   background-color: $app-background-color;
 }
 
 .app {
-  background-color: $app-background-color;
   font-size: calc(10px + 2vmin);
   color: white;
 
@@ -37,7 +36,6 @@ body {
 }
 
 .app-hidden {
-  background-color: $app-background-color;
   font-size: calc(10px + 2vmin);
   color: white;
 
@@ -59,15 +57,6 @@ body {
 }
 
 @media only screen and (max-width: 920px) {
-  .nav-logo {
-    font-size: 30px;
-    padding: 0 0 0 5px;
-    margin: 0;
-    width: fit-content;
-    width: -moz-fit-content;
-    height: fit-content;
-    height: -moz-fit-content;
-  }
   .logo-nav-item {
     width: fit-content;
     width: -moz-fit-content;
@@ -91,16 +80,6 @@ body {
     padding: 5px 0 5px 0;
   }
 }
-
-// .base-triangle {
-//   width: 0;
-//   height: 0;
-//   border-right: 5px solid #ffffff;
-//   border-top: 15px solid transparent;
-//   border-bottom: 15px solid transparent;
-//   margin-left: 5px;
-//   justify-content: flex-end;
-// }
 
 /* @keyframes nav-logo-spin {
   from {

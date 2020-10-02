@@ -6,7 +6,7 @@
   width: calc(#{$profile-picture-length} + 100px);
   height: 100%;
   padding: 0 $standard-padding;
-  background-color: $app-header-background-color;
+  background-color: $overview-pane-background-color;
   box-shadow: 1px 2px 2px black;
   transition: 1s;
 
@@ -41,8 +41,9 @@
   display: flex;
   padding: 0 5px;
   width: fit-content;
+  width: -moz-fit-content;
   height: 100%;
-  background-color: $app-header-background-color;
+  background-color: $overview-pane-background-color;
   box-shadow: 1px 2px 2px black;
   transition: 1s;
 }
@@ -51,6 +52,8 @@
   display: flex;
   justify-content: flex-end;
   margin: auto 0 15px auto;
+  color: $app-text-color;
+
   &:hover {
     cursor: pointer;
   }
@@ -58,7 +61,6 @@
 
 .invisible {
   height: 0;
-  width: 0;
   opacity: 0;
   transition: 1s;
 }

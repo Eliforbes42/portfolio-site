@@ -12,18 +12,17 @@
 }
 
 .about-pane {
-  border: 1px solid $light-border;
-  border-radius: 15px;
+  border-radius: 6px;
   padding: 5px 5px 8px 5px;
   margin: 5px;
   color: $about-pane-text-color;
-  background-color: $app-header-background-color;
-  transition: all 0.5s linear;
+  background-color: $about-pane-background-color;
+  transition: 0.5s;
   cursor: pointer;
+
   &:hover {
-    background-color: $app-background-color;
-    border: 1px solid $app-text-color-50;
-    transition: all 0.5s linear;
+    background-color: $about-hover-color;
+    transition: 0.5s;
   }
 
   .about-title-container {
@@ -37,13 +36,9 @@
       font: $about-title-font;
       padding: 3px 0;
       transition: 1s;
-    }
-    .about-title {
       border-bottom: 1px solid $about-pane-text-color;
     }
-    .about-title-collapsed-pane {
-      border-bottom: 1px solid $app-header-background-color; //Invisible border so visible border doesn't look like it disappears
-    }
+
     &:hover {
       .about-title-collapsed-pane {
         border-bottom: 1px solid $app-background-color; //Invisible border so visible border doesn't look like it disappears
@@ -55,11 +50,14 @@
     padding-left: 10px;
     overflow: hidden;
     transition: 1s;
+
     .about-text {
       font: $about-text-font;
+
       ul {
         margin-top: 10px;
         margin-bottom: 0;
+
         ul {
           margin-top: 0px;
         }
