@@ -2,9 +2,8 @@
 $padding-length: calc(#{$standard-padding} + 5px);
 
 @mixin profile-picture-container-common {
+  @include card;
   display: flex;
-  background-color: $overview-pane-background-color;
-  box-shadow: $card-box-shadow;
   transition: 1s;
 }
 
@@ -15,7 +14,6 @@ $padding-length: calc(#{$standard-padding} + 5px);
   height: calc(100% - (#{$padding-length} * 2));
   margin: $padding-length 0 $padding-length $padding-length;
   padding: 0 $standard-padding;
-  border-radius: $card-border-radius;
 
   &-collapsed {
     @include profile-picture-container-common;

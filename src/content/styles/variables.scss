@@ -83,3 +83,10 @@ $about-text-font: calc(10px + 2vmin) $about-font;
   height: fit-content;
   height: -moz-fit-content;
 }
+
+@mixin card {
+  background-color: $light-shade;
+  color: $dark-shade;
+  border-radius: $card-border-radius;
+  box-shadow: $card-box-shadow;
+}

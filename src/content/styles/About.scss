@@ -16,12 +16,9 @@
 }
 
 .about-pane {
-  border-radius: $card-border-radius;
+  @include card;
   padding: 5px 5px 8px 5px;
   margin: 5px;
-  color: $about-pane-text-color;
-  background-color: $about-pane-background-color;
-  box-shadow: $card-box-shadow;
   transition: 0.5s;
   cursor: pointer;
 
