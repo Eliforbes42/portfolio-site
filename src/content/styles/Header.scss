@@ -64,8 +64,7 @@
     background-color: $app-header-background-color;
     border-color: $app-nav-button-color;
     color: $app-nav-button-color;
-    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12),
-      0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    box-shadow: $button-box-shadow;
     transition: 0.5s;
   }
 }
@@ -86,8 +85,7 @@
         background-color: $app-header-background-color;
         color: $app-nav-button-color;
         transition: 0.5s;
-        box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12),
-          0 5px 5px -3px rgba(0, 0, 0, 0.2);
+        box-shadow: $button-box-shadow;
       }
     }
   }
