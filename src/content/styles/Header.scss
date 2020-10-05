@@ -8,8 +8,7 @@
   box-shadow: $card-box-shadow;
 
   .logo-nav-item {
-    width: fit-content;
-    width: --moz-fit-content;
+    @include width-fit-content;
     text-decoration: none;
     outline: 0;
 
@@ -21,53 +20,33 @@
   }
 
   .nav-align-right {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
+    @include flex-end;
+    @include width-fit-content;
     padding-right: $standard-padding;
-    width: fit-content;
-    width: --moz-fit-content;
-
-    .nav-item {
-      display: flex;
-      width: fit-content;
-      width: --moz-fit-content;
-      height: calc(100% - 2px);
-      align-items: center;
-      padding: 0 15px;
-      border-bottom: 2px solid #181c24;
-      transition: 0.5s;
-
-      &:hover {
-        background-color: $app-background-color;
-        border-bottom: 2px solid $app-background-color;
-        transition: 0.5s;
-      }
-    }
   }
 
   .document-menu-button {
-    align-items: center;
-    justify-content: flex-end;
-    margin: auto 0 auto auto;
+    @include flex-center-vertical;
+    @include flex-end;
     padding-right: 30px;
   }
-}
 
-.ms-Button--hasMenu {
-  background-color: $app-nav-button-color;
-  color: $app-header-background-color;
-  border-color: $app-nav-button-color;
-  transition: 0.5as;
-
-  &:hover {
-    background-color: $app-header-background-color;
+  .ms-Button--hasMenu {
+    background-color: $app-nav-button-color;
+    color: $app-header-background-color;
     border-color: $app-nav-button-color;
-    color: $app-nav-button-color;
-    box-shadow: $button-box-shadow;
-    transition: 0.5s;
+    transition: 0.5as;
+
+    &:hover {
+      background-color: $app-header-background-color;
+      border-color: $app-nav-button-color;
+      color: $app-nav-button-color;
+      box-shadow: $button-box-shadow;
+      transition: 0.5s;
+    }
   }
 }
+
 .ms-ContextualMenu-Callout {
   margin-right: 10px;
 
@@ -81,6 +60,7 @@
       padding: 0 10px;
       border-radius: 3px;
       text-align: center;
+
       &:hover {
         background-color: $app-header-background-color;
         color: $app-nav-button-color;

@@ -7,8 +7,7 @@
   height: $footer-height;
   width: 100%;
 
-  display: flex;
-  align-items: center;
+  @include flex-center-vertical;
 
   font-size: calc(2px + 2vmin);
   font-family: "Nicholas Bold";
@@ -18,23 +17,18 @@
   transition: 1s;
 
   .app-footer-content {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    @include flex-center-horizontal;
     position: relative;
     left: 39px;
 
     .footer-links {
-      display: flex;
-      align-items: center;
+      @include flex-center-vertical;
     }
   }
 
   .return-links {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    @include flex-end;
+    @include flex-center-vertical;
     padding-right: $standard-padding;
 
     .ms-Checkbox.is-checked.is-enabled {
@@ -100,11 +94,10 @@
 
 .plane-logo {
   padding-right: 3px;
-  align-items: center;
   transition: 0.5s;
 
   svg {
-    height: calc(10px + 2vmin);
+    height: calc(5px + 2vmin);
   }
   svg polygon,
   svg line {
@@ -116,7 +109,6 @@
 
 .fabric-logo {
   display: flex;
-  align-items: center;
   color: $app-button-color;
   font-size: calc(10px + 2vmin);
   height: calc(10px + 2vmin);

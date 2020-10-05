@@ -35,9 +35,7 @@
 
   .about-title-container {
     display: flex;
-    padding-top: 3px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 3px 10px 0 10px;
 
     .about-title,
     .about-title-collapsed-pane {
@@ -46,13 +44,8 @@
       transition: 1s;
       border-bottom: 1px solid $about-pane-text-color;
     }
-
-    &:hover {
-      .about-title-collapsed-pane {
-        border-bottom: 1px solid $app-background-color; //Invisible border so visible border doesn't look like it disappears
-      }
-    }
   }
+
   .about-content,
   .about-content-collapsed {
     padding-left: 10px;
@@ -81,14 +74,11 @@
 }
 
 .chevron {
+  @include flex-center-vertical;
+  @include flex-end;
+  @include width-fit-content;
+  @include height-fit-content;
   padding: 3px;
-  justify-content: flex-end;
-  align-items: center;
-  margin: auto 0 auto auto;
-  width: fit-content;
-  width: -moz-fit-content;
-  height: fit-content;
-  height: -moz-fit-content;
   transition: 1s;
 }
 
