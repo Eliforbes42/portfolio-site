@@ -4,9 +4,7 @@ import About from "../About/About";
 import Header from "./Header";
 import MainSection from "./MainSection";
 
-interface Props {}
-
-const MainContent = (props: Props) => {
+const MainContent = () => {
   return (
     <Router>
       <Header />

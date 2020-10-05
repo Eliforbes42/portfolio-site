@@ -1,10 +1,10 @@
 import React from "react";
 
-interface Props {
+interface MainSectionProps {
   children: JSX.Element;
 }
 
-const MainSection = (props: Props) => {
+const MainSection = (props: MainSectionProps) => {
   return <main className="app-main">{props.children}</main>;
 };
 

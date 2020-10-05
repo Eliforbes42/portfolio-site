@@ -2,13 +2,13 @@ import { Checkbox, FontIcon } from "office-ui-fabric-react";
 import React from "react";
 import PaperPlane from "../Misc/MailLogo";
 
-interface Props {
+interface FooterProps {
   setMainContentShow: () => void;
   togglePageScrollTransition: () => void;
   useScrollTransitions: boolean;
 }
 
-const Footer = (props: Props) => {
+const Footer = (props: FooterProps) => {
   return (
     <footer className={"app-footer"}>
       <div className={"app-footer-content"}>

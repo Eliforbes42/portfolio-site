@@ -2,11 +2,11 @@ import { FontIcon } from "@fluentui/react";
 import React, { useEffect, useState } from "react";
 import { terminalText } from "../../Strings";
 
-interface Props {
+interface FrontPageProps {
   setShowMainContent: () => void;
 }
 
-const FrontPage = (props: Props) => {
+const FrontPage = (props: FrontPageProps) => {
   const [blinking, setBlinking] = useState("blink1");
   useEffect(() => {
     const interval = setInterval(() => {

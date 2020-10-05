@@ -1,8 +1,6 @@
 import { FontIcon, registerIcons } from "@fluentui/react";
 import React from "react";
 
-interface Props {}
-
 registerIcons({
   icons: {
     "paperplane-svg": (
@@ -33,7 +31,7 @@ registerIcons({
   },
 });
 
-const PaperPlane = (props: Props) => {
+const PaperPlane = () => {
   return (
     <span className={"plane-logo"}>
       <FontIcon iconName="paperplane-svg" title={"Contact Me"} />

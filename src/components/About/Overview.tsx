@@ -3,9 +3,7 @@ import React, { useState } from "react";
 import profilePicture from "../../content/images/profilePicture.jpg";
 import { overviewContent } from "../../Strings";
 
-interface Props {}
-
-const Overview = (props: Props) => {
+const Overview = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   const [showExpandButton] = useState(window.innerWidth > 1024);
   const toggleExpansion = () => setIsExpanded(!isExpanded);

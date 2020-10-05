@@ -5,11 +5,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { documentStrings } from "../../Strings";
 
-interface Props {}
-
-const Header = (props: Props) => {
+const Header = () => {
   const toSnakeCase = (text: string) => text.toLowerCase().replace(/\s/g, "_");
-  const menuProps = useConst<IContextualMenuProps>(() => ({
+  const dropdownMenuProps = useConst<IContextualMenuProps>(() => ({
     shouldFocusOnMount: true,
     items: documentStrings.map((document) => ({
       key: toSnakeCase(document),
@@ -24,7 +22,7 @@ const Header = (props: Props) => {
         <img src="./CatamaranLogoWhite.png" className={"nav-logo"} alt={"Eli Forbes"} />
       </Link>
       <div className="document-menu-button">
-        <DefaultButton text={"Documents"} menuProps={menuProps} />
+        <DefaultButton text={"Documents"} menuProps={dropdownMenuProps} />
       </div>
     </header>
   );

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Chevron from "../Misc/Chevron";
 
-interface Props {
+interface AboutPaneProps {
   title: string;
   content: string | JSX.Element;
 }
 
-const AboutPane = (props: Props) => {
+const AboutPane = (props: AboutPaneProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const expandContainer = () => {

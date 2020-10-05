@@ -2,9 +2,8 @@ import React from "react";
 import { aboutContent } from "../../Strings";
 import AboutPane from "./AboutPane";
 import Overview from "./Overview";
-interface Props {}
 
-const About = (props: Props) => {
+const About = () => {
   const content = [
     aboutContent.education,
     {
