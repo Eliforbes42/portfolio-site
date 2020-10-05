@@ -4,17 +4,12 @@ import AboutPane from "./AboutPane";
 import Overview from "./Overview";
 
 const About = () => {
+  const mapToListItems = (items: string[]) => items.map((item) => <li>{item}</li>);
   const content = [
     aboutContent.education,
     {
       title: aboutContent.qualities.title,
-      content: (
-        <ul>
-          {aboutContent.qualities.qualities.map((quality) => (
-            <li>{quality}</li>
-          ))}
-        </ul>
-      ),
+      content: <ul>{mapToListItems(aboutContent.qualities.qualities)}</ul>,
     },
     {
       title: aboutContent.skills.title,
@@ -23,11 +18,7 @@ const About = () => {
           {aboutContent.skills.skills.map((area) => (
             <li>
               <li>{area.area}</li>
-              <ul>
-                {area.skills.map((skill) => (
-                  <li>{skill}</li>
-                ))}
-              </ul>
+              <ul>{mapToListItems(area.skills)}</ul>
             </li>
           ))}
         </ul>
@@ -45,13 +36,7 @@ const About = () => {
     },
     {
       title: aboutContent.hobbies.title,
-      content: (
-        <ul>
-          {aboutContent.hobbies.hobbies.map((hobby) => (
-            <li>{hobby}</li>
-          ))}
-        </ul>
-      ),
+      content: <ul>{mapToListItems(aboutContent.hobbies.hobbies)}</ul>,
     },
   ];
 
