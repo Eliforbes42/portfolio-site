@@ -1,5 +1,5 @@
 import React from "react";
-import { aboutContent } from "../../Strings";
+import { aboutContent } from "../../content/Strings";
 import AboutPane from "./AboutPane";
 import Overview from "./Overview";
 

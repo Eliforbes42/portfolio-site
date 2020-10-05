@@ -1,7 +1,7 @@
 import { FontIcon } from "@fluentui/react";
 import React, { useState } from "react";
 import profilePicture from "../../content/images/profilePicture.jpg";
-import { overviewContent } from "../../Strings";
+import { overviewContent } from "../../content/Strings";
 
 const Overview = () => {
   const [isExpanded, setIsExpanded] = useState(true);

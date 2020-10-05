@@ -1,6 +1,6 @@
 import { FontIcon } from "@fluentui/react";
 import React, { useEffect, useState } from "react";
-import { terminalText } from "../../Strings";
+import { terminalText } from "../../content/Strings";
 
 interface FrontPageProps {
   setShowMainContent: () => void;

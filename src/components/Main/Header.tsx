@@ -3,7 +3,7 @@ import { DefaultButton } from "office-ui-fabric-react/lib/Button";
 import { IContextualMenuProps } from "office-ui-fabric-react/lib/ContextualMenu";
 import React from "react";
 import { Link } from "react-router-dom";
-import { documentStrings } from "../../Strings";
+import { documentStrings } from "../../content/Strings";
 
 const Header = () => {
   const toSnakeCase = (text: string) => text.toLowerCase().replace(/\s/g, "_");
