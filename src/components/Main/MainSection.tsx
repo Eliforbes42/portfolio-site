@@ -4,8 +4,8 @@ interface Props {
   children: JSX.Element;
 }
 
-const Main = (props: Props) => {
+const MainSection = (props: Props) => {
   return <main className="app-main">{props.children}</main>;
 };
 
-export default Main;
+export default MainSection;
