@@ -12,7 +12,7 @@ const Header = () => {
     items: documentStrings.map((document) => ({
       key: toSnakeCase(document),
       text: document,
-      href: `./${toSnakeCase(document)}.pdf`,
+      href: `./documents/${toSnakeCase(document)}.pdf`,
     })),
   }));
 
