@@ -18,16 +18,22 @@
   color: $app-text-color;
   font: 26px "Consolas";
 
+  &-hidden {
+    bottom: 100vh;
+    opacity: 0;
+    transition: 1s;
+  }
+
   .front-page-terminal {
     background-color: $front-page-terminal-background-color;
     padding: 0 15px 15px 15px;
     border-radius: 8px;
 
-    .front-page-terminal-nav {
+    &-nav {
       @include flex-end;
       padding: 10px 0;
 
-      .front-page-terminal-nav-item {
+      &-item {
         width: 14px;
         height: 14px;
         border-radius: 7px;
@@ -50,7 +56,7 @@
     }
   }
 
-  .front-page-icon {
+  &-icon {
     //Center Icon in Bubble
     @include flex-center-vertical;
     @include flex-center-horizontal;
@@ -71,15 +77,4 @@
       transition: 1s;
     }
   }
-}
-
-.front-page-hidden {
-  background-color: $app-background-color;
-  font-size: calc(10px + 2vmin);
-  color: white;
-
-  bottom: 100vh;
-  overflow: hidden;
-  opacity: 0;
-  transition: 1s;
 }

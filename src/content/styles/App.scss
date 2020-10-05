@@ -33,17 +33,14 @@ body,
   top: 0;
   opacity: 100;
   transition: 1s;
-}
 
-.app-hidden {
-  font-size: calc(10px + 2vmin);
-  color: white;
-
-  height: 0;
-  top: 100vh;
-  overflow: hidden;
-  opacity: 0;
-  transition: 1s;
+  &-hidden {
+    @extend .app;
+    height: 0;
+    top: 100vh;
+    overflow: hidden;
+    opacity: 0;
+  }
 }
 
 .app-main {

@@ -46,11 +46,16 @@
     }
   }
 
-  .about-content,
-  .about-content-collapsed {
+  .about-content {
     padding-left: 10px;
     overflow: hidden;
     transition: 1s;
+    max-height: 10000px;
+
+    &-collapsed {
+      @extend .about-content;
+      max-height: 0px;
+    }
 
     .about-text {
       font: $about-text-font;
@@ -64,12 +69,6 @@
         }
       }
     }
-  }
-  .about-content {
-    max-height: 10000px;
-  }
-  .about-content-collapsed {
-    max-height: 0px;
   }
 }
 

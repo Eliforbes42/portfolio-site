@@ -1,17 +1,29 @@
 @import "./variables";
 $padding-length: calc(#{$standard-padding} + 5px);
 
-.profile-picture-container {
+@mixin profile-picture-container-common {
   display: flex;
+  background-color: $overview-pane-background-color;
+  box-shadow: $card-box-shadow;
+  transition: 1s;
+}
+
+.profile-picture-container {
+  @include profile-picture-container-common;
   flex-wrap: wrap;
   width: calc(#{$profile-picture-length} + 100px);
   height: calc(100% - ($padding-length * 2));
   margin: $padding-length 0 $padding-length $padding-length;
   padding: 0 $standard-padding;
   border-radius: $card-border-radius;
-  background-color: $overview-pane-background-color;
-  box-shadow: $card-box-shadow;
-  transition: 1s;
+
+  &-collapsed {
+    @include profile-picture-container-common;
+    @include width-fit-content;
+    height: 100%;
+    padding: 0 5px;
+    border-radius: 0 $card-border-radius $card-border-radius 0;
+  }
 
   .profile-picture {
     @include flex-center-horizontal;
@@ -37,17 +49,6 @@ $padding-length: calc(#{$standard-padding} + 5px);
     width: 100%;
     margin-bottom: $standard-padding;
   }
-}
-
-.profile-picture-container-collapsed {
-  display: flex;
-  padding: 0 5px;
-  @include width-fit-content;
-  height: 100%;
-  background-color: $overview-pane-background-color;
-  box-shadow: $card-box-shadow;
-  transition: 1s;
-  border-radius: 0 $card-border-radius $card-border-radius 0;
 }
 
 .expansion-chevron {
