@@ -1,13 +1,16 @@
 @import "./variables";
+$padding-length: calc(#{$standard-padding} + 5px);
 
 .profile-picture-container {
   display: flex;
   flex-wrap: wrap;
   width: calc(#{$profile-picture-length} + 100px);
-  height: 100%;
+  height: calc(100% - ((#{$standard-padding} + 5px) * 2));
+  margin: $padding-length 0 $padding-length $padding-length;
   padding: 0 $standard-padding;
+  border-radius: $card-border-radius;
   background-color: $overview-pane-background-color;
-  box-shadow: 1px 2px 2px black;
+  box-shadow: $card-box-shadow;
   transition: 1s;
 
   .profile-picture {
@@ -35,6 +38,9 @@
     color: $about-pane-text-color;
     width: 100%;
   }
+  &.no-content {
+    opacity: 0;
+  }
 }
 
 .profile-picture-container-collapsed {
@@ -44,8 +50,9 @@
   width: -moz-fit-content;
   height: 100%;
   background-color: $overview-pane-background-color;
-  box-shadow: 1px 2px 2px black;
+  box-shadow: $card-box-shadow;
   transition: 1s;
+  border-radius: 0 $card-border-radius $card-border-radius 0;
 }
 
 .expansion-chevron {

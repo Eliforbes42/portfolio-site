@@ -70,8 +70,4 @@
   .profile-picture-container {
     width: calc(100vw - (#{$standard-padding}* 2));
   }
-  .profile-picture-container.no-content,
-  .profile-picture-container-collapsed.no-content {
-    height: 0;
-  }
 }

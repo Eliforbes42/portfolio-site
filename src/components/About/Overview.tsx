@@ -24,7 +24,6 @@ const Overview = () => {
           />
         )}
       </div>
-      <div className={"profile-picture-container no-content"} />
     </div>
   ) : (
     <div>
@@ -35,9 +34,6 @@ const Overview = () => {
           className={"fabric-logo expansion-chevron footer-link"}
           onClick={toggleExpansion}
         />
-      </div>
-      <div className={"profile-picture-container-collapsed no-content"}>
-        <FontIcon iconName={"DoubleChevronRight8"} className={"fabric-logo expansion-chevron footer-link invisible"} />
       </div>
     </div>
   );
