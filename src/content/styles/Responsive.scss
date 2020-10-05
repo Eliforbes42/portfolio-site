@@ -52,6 +52,13 @@
     max-width: 100vw;
     display: block;
 
+    .about-pane-hoverable {
+      &:hover {
+        background-color: $about-pane-background-color;
+        transition: 0.5s;
+      }
+    }
+
     .description-container {
       padding-bottom: $standard-padding;
     }

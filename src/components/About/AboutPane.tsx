@@ -14,7 +14,7 @@ const AboutPane = (props: Props) => {
   };
 
   return (
-    <div className={"about-pane"} onClick={expandContainer}>
+    <div className={isExpanded ? "about-pane" : "about-pane-hoverable"} onClick={expandContainer}>
       <div className={"about-title-container"}>
         <div className={isExpanded ? "about-title" : "about-title-collapsed-pane"}>{props.title}</div>
         <Chevron isExpanded={isExpanded} />
