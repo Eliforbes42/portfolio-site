@@ -13,6 +13,8 @@ const Header = () => {
       key: toSnakeCase(document),
       text: document,
       href: `./documents/${toSnakeCase(document)}.pdf`,
+      target: "_blank",
+      rel: "noopener noreferrer",
     })),
   }));
 
