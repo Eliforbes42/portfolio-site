@@ -1,5 +1,6 @@
 import { FontIcon } from "@fluentui/react";
 import React, { useEffect, useState } from "react";
+import { terminalText } from "../../Strings";
 
 interface Props {
   setShowMainContent: () => void;
@@ -24,7 +25,7 @@ const FrontPage = (props: Props) => {
           <span className={"front-page-terminal-nav-item"} />
         </div>
         <div className={"front-page-terminal"}>
-          {"E:\\Forbes> A developer with simplicity in mind"}
+          {terminalText}
           <span className={blinking}>_</span>
         </div>
       </div>

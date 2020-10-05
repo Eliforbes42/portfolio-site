@@ -8,12 +8,13 @@ import { documentStrings } from "../../Strings";
 interface Props {}
 
 const Header = (props: Props) => {
+  const toSnakeCase = (text: string) => text.toLowerCase().replace(/\s/g, "_");
   const menuProps = useConst<IContextualMenuProps>(() => ({
     shouldFocusOnMount: true,
     items: documentStrings.map((document) => ({
-      key: document.toLowerCase().replace(/\s/g, "_"),
+      key: toSnakeCase(document),
       text: document,
-      href: `./${document.toLowerCase().replace(/\s/g, "_")}.pdf`,
+      href: `./${toSnakeCase(document)}.pdf`,
     })),
   }));
 

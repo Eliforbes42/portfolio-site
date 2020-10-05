@@ -1,6 +1,7 @@
 import { FontIcon } from "@fluentui/react";
 import React, { useState } from "react";
 import profilePicture from "../../content/images/profilePicture.jpg";
+import { overviewContent } from "../../Strings";
 
 interface Props {}
 
@@ -14,11 +15,8 @@ const Overview = (props: Props) => {
       <div className={"profile-picture-container"}>
         <img className={"profile-picture"} src={profilePicture} alt="Eli Forbes" />
         <div className={"description-container"}>
-          <div className={"description-title"}>Overview</div>
-          <div className={"description-text"}>
-            Eli is a Software Engineer with a passion for creating smooth visual experiences, a keen interest in
-            learning various technologies, and a love for coding in general.
-          </div>
+          <div className={"description-title"}>{overviewContent.title}</div>
+          <div className={"description-text"}>{overviewContent.text}</div>
         </div>
         {showExpandButton && (
           <FontIcon
