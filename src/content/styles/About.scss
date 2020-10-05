@@ -9,15 +9,19 @@
 .about-description-container {
   padding: $standard-padding;
   width: 100%;
+
+  .last-about-pane {
+    margin-bottom: calc(#{$footer-height} + #{$standard-padding});
+  }
 }
 
 .about-pane {
-  border-radius: 6px;
+  border-radius: $card-border-radius;
   padding: 5px 5px 8px 5px;
   margin: 5px;
   color: $about-pane-text-color;
   background-color: $about-pane-background-color;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: $card-box-shadow;
   transition: 0.5s;
   cursor: pointer;
 

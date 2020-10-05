@@ -4,6 +4,7 @@ import Chevron from "../Misc/Chevron";
 interface AboutPaneProps {
   title: string;
   content: string | JSX.Element;
+  className?: string;
 }
 
 const AboutPane = (props: AboutPaneProps) => {
@@ -13,8 +14,11 @@ const AboutPane = (props: AboutPaneProps) => {
     setIsExpanded(!isExpanded);
   };
 
+  const addClassNameProp = (baseClassName: string) =>
+    props.className ? `${baseClassName} ${props.className}` : baseClassName;
+
   return (
-    <div className={isExpanded ? "about-pane" : "about-pane-hoverable"} onClick={expandContainer}>
+    <div className={addClassNameProp(isExpanded ? "about-pane" : "about-pane-hoverable")} onClick={expandContainer}>
       <div className={"about-title-container"}>
         <div className={isExpanded ? "about-title" : "about-title-collapsed-pane"}>{props.title}</div>
         <Chevron isExpanded={isExpanded} />

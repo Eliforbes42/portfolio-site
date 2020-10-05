@@ -44,9 +44,9 @@ const About = () => {
     <div className="about-page-container">
       <Overview />
       <div className="about-description-container">
-        {content.map((section) => (
-          <AboutPane {...section} />
-        ))}
+        {content.map((section, i) =>
+          i === content.length - 1 ? <AboutPane {...section} className="last-about-pane" /> : <AboutPane {...section} />
+        )}
       </div>
     </div>
   );
