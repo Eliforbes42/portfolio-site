@@ -38,24 +38,26 @@ export const aboutContent = {
     title: "Background",
     background: [
       `At a young age, Eli took an interest in graphic design, using tools such as GIMP, Photoshop, and
-    Illustrator. He soon created a gaming-related blog to get into content creation and test out his graphic
-    design skills, while also marketing such skills to like-minded peers in the game's community. During this
-    time, he learned of HTML, CSS, and eventually JavaScript. Upon these discoveries, he took a strong interest
-    in the creation of visual experiences using such languages in combination with his graphic design efforts,
+    Illustrator. He soon created a gaming-related blog to improve upon his graphic design skills, 
+    and market such skills to like-minded peers in the game's community. During this time, he learned of HTML, CSS, and eventually JavaScript. 
+    Upon these discoveries, he took a strong interest in the creation of visual experiences using such languages in combination with his graphic design efforts,
     and began learning about web development while progressively improving his blog.`,
-      `However, during Middle School and High School, general schooling turned to occupy the bulk of his time.
-    Despite the lack of free time, in High School he got more into programming by learning the basics of coding
-    in C and Java, for use in the Robotics Club. This interest sparked the motiviation for Eli to move into
-    University and dive head-first into pursuing a Computer Science degree, progressively learning C, C++, and
-    C#, while gaining light experience in other languages such as Python and Java. During this time, C became
+
+      `During Middle School and High School, while general studies turned to occupy the bulk of his time, 
+      he still maintained an interest in graphic design. In High School he got more into programming by learning the basics of coding
+    in C and Java, for use in the Robotics Club. This learning sparked a larger interest in coding, as well as the motivation for Eli to move into
+    University and dive head-first into pursuing a Computer Science degree. He progressively became proficient in C, C++, and
+    C#, while gaining experience in other languages such as SQL, Java, and Python. During this time, C became
     his strong suit, as he soon became a Teaching Assistant for the introductory programming class, and
-    eventually utilized it in the File Systems and Operating Systems classes.`,
+    eventually utilized the language to create both a File System and Operating System.`,
+
       `Partway through University, during his time as a Teaching Assistant, Eli took back up his hobby of web
-    development by creating a site which served as a resources to students. This soon led further into the
+    development by creating a site intended to serve as a resources to students. This soon led further into the
     creation of a web-based tool which simplified certain processes within a game. Testing his mettle, he
     created two different web applications using ASP.NET and React, along with a mobile application using
     Android Studio. While they weren't pictures of perfection by any means, he thoroughly enjoyed the challenge
     and learning experience that each iteration provided.`,
+
       `To this day, Eli continues to enjoy each and every challenge of being a Software Engineer, as thus far he's
     had the pleasure of turning his hobby into a profession, and especially since there's always something new
     to learn..`,
