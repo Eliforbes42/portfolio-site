@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio-site/static/css/main.a1640ea1.chunk.css",
-    "main.js": "/portfolio-site/static/js/main.34c495cc.chunk.js",
-    "main.js.map": "/portfolio-site/static/js/main.34c495cc.chunk.js.map",
-    "runtime-main.js": "/portfolio-site/static/js/runtime-main.4809b253.js",
-    "runtime-main.js.map": "/portfolio-site/static/js/runtime-main.4809b253.js.map",
-    "static/js/2.22043ebc.chunk.js": "/portfolio-site/static/js/2.22043ebc.chunk.js",
-    "static/js/2.22043ebc.chunk.js.map": "/portfolio-site/static/js/2.22043ebc.chunk.js.map",
-    "index.html": "/portfolio-site/index.html",
-    "precache-manifest.6667bba40f41f893db883de2fa07896b.js": "/portfolio-site/precache-manifest.6667bba40f41f893db883de2fa07896b.js",
-    "service-worker.js": "/portfolio-site/service-worker.js",
-    "static/css/main.a1640ea1.chunk.css.map": "/portfolio-site/static/css/main.a1640ea1.chunk.css.map",
-    "static/js/2.22043ebc.chunk.js.LICENSE.txt": "/portfolio-site/static/js/2.22043ebc.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/portfolio-site/static/media/Inconsolata-VariableFont_wdth,wght.3701d12f.ttf",
-    "static/media/profilePicture.jpg": "/portfolio-site/static/media/profilePicture.9b2a6bb1.jpg"
+    "main.css": "/static/css/main.887b6414.chunk.css",
+    "main.js": "/static/js/main.52477eba.chunk.js",
+    "main.js.map": "/static/js/main.52477eba.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
+    "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
+    "static/js/2.22043ebc.chunk.js": "/static/js/2.22043ebc.chunk.js",
+    "static/js/2.22043ebc.chunk.js.map": "/static/js/2.22043ebc.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ae514445caa6c7e06a0d9b591bf9b6b8.js": "/precache-manifest.ae514445caa6c7e06a0d9b591bf9b6b8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.887b6414.chunk.css.map": "/static/css/main.887b6414.chunk.css.map",
+    "static/js/2.22043ebc.chunk.js.LICENSE.txt": "/static/js/2.22043ebc.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/Inconsolata-VariableFont_wdth,wght.3701d12f.ttf",
+    "static/media/profilePicture.jpg": "/static/media/profilePicture.9b2a6bb1.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4809b253.js",
+    "static/js/runtime-main.19ccc7f6.js",
     "static/js/2.22043ebc.chunk.js",
-    "static/css/main.a1640ea1.chunk.css",
-    "static/js/main.34c495cc.chunk.js"
+    "static/css/main.887b6414.chunk.css",
+    "static/js/main.52477eba.chunk.js"
   ]
 }
