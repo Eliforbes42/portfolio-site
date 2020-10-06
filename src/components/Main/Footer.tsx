@@ -24,7 +24,7 @@ const Footer = (props: FooterProps) => {
             </a>
           </div>
           <div className={"footer-link github"}>
-            <a href="https://github.com/Eliforbes42" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/theeliforbes" target="_blank" rel="noopener noreferrer">
               <FontIcon iconName="GitGraph" className={"fabric-logo"} title={"GitHub"} />
             </a>
           </div>

@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://eliforbes42.github.io/portfolio-site/",
+  "homepage": "https://theeliforbes.github.io/",
   "dependencies": {
     "@babel/core": "7.9.0",
     "@fluentui/react": "^7.142.1",
