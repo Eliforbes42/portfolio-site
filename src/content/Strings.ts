@@ -41,19 +41,20 @@ export const aboutContent = {
     Illustrator. He soon created a gaming-related blog to improve upon his graphic design skills, 
     and market such skills to like-minded peers in the game's community. During this time, he learned of HTML, CSS, and eventually JavaScript. 
     Upon these discoveries, he took a strong interest in the creation of visual experiences using such languages in combination with his graphic design efforts,
-    and began learning about web development while progressively improving his blog.`,
+    and began progressively improved his blog during his learning about web development.`,
 
       `During Middle School and High School, while general studies turned to occupy the bulk of his time, 
       he still maintained an interest in graphic design. In High School he got more into programming by learning the basics of coding
     in C and Java, for use in the Robotics Club. This learning sparked a larger interest in coding, as well as the motivation for Eli to move into
     University and dive head-first into pursuing a Computer Science degree. He progressively became proficient in C, C++, and
-    C#, while gaining experience in other languages such as SQL, Java, and Python. During this time, C became
-    his strong suit, as he soon became a Teaching Assistant for the introductory programming class, and
+    C#, while gaining experience in other languages such as SQL, Java, and Python. He strove to learn as much as possible, 
+    gaining experience in Containerization through Docker and Kubernetes, as well as learning of Cloud Computing through Google Cloud Platform and Skytap Cloud. 
+    During this time, C became his strong suit, as he soon became a Teaching Assistant for the introductory programming class, and
     eventually utilized the language to create both a File System and Operating System.`,
 
       `Partway through University, during his time as a Teaching Assistant, Eli took back up his hobby of web
     development by creating a site intended to serve as a resources to students. This soon led further into the
-    creation of a web-based tool which simplified certain processes within a game. Testing his mettle, he
+    creation of a web-based tool intended to promote task efficiency within a game. Testing his mettle, he
     created two different web applications using ASP.NET and React, along with a mobile application using
     Android Studio. While they weren't pictures of perfection by any means, he thoroughly enjoyed the challenge
     and learning experience that each iteration provided.`,
