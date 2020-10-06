@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/portfolio-site/static/css/main.a1640ea1.chunk.css",
+    "main.js": "/portfolio-site/static/js/main.01bc1f33.chunk.js",
+    "main.js.map": "/portfolio-site/static/js/main.01bc1f33.chunk.js.map",
+    "runtime-main.js": "/portfolio-site/static/js/runtime-main.4809b253.js",
+    "runtime-main.js.map": "/portfolio-site/static/js/runtime-main.4809b253.js.map",
+    "static/js/2.22043ebc.chunk.js": "/portfolio-site/static/js/2.22043ebc.chunk.js",
+    "static/js/2.22043ebc.chunk.js.map": "/portfolio-site/static/js/2.22043ebc.chunk.js.map",
+    "index.html": "/portfolio-site/index.html",
+    "precache-manifest.043920e56436fddb6eb880890d41e60e.js": "/portfolio-site/precache-manifest.043920e56436fddb6eb880890d41e60e.js",
+    "service-worker.js": "/portfolio-site/service-worker.js",
+    "static/css/main.a1640ea1.chunk.css.map": "/portfolio-site/static/css/main.a1640ea1.chunk.css.map",
+    "static/js/2.22043ebc.chunk.js.LICENSE.txt": "/portfolio-site/static/js/2.22043ebc.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/portfolio-site/static/media/Inconsolata-VariableFont_wdth,wght.3701d12f.ttf",
+    "static/media/profilePicture.jpg": "/portfolio-site/static/media/profilePicture.9b2a6bb1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4809b253.js",
+    "static/js/2.22043ebc.chunk.js",
+    "static/css/main.a1640ea1.chunk.css",
+    "static/js/main.01bc1f33.chunk.js"
+  ]
+}
