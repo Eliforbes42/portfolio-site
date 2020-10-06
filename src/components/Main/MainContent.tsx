@@ -6,16 +6,18 @@ import MainSection from "./MainSection";
 
 const MainContent = () => {
   return (
-    <Router>
-      <Header />
-      <Switch>
-        <Route path="/" exact>
-          <MainSection>
-            <About />
-          </MainSection>
-        </Route>
-      </Switch>
-    </Router>
+    <>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Header />
+        <Switch>
+          <Route path="/" exact>
+            <MainSection>
+              <About />
+            </MainSection>
+          </Route>
+        </Switch>
+      </Router>
+    </>
   );
 };
 
