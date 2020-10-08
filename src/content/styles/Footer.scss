@@ -17,10 +17,6 @@
   transition: 1s;
 
   .app-footer-content {
-    @include flex-center-horizontal;
-    position: relative;
-    left: 39px;
-
     .footer-links {
       @include flex-center-vertical;
     }
