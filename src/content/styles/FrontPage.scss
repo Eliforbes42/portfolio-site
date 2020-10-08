@@ -19,6 +19,8 @@
   font: 26px "Consolas";
 
   &-hidden {
+    @extend .front-page;
+    position: absolute;
     bottom: 100vh;
     opacity: 0;
     transition: 1s;

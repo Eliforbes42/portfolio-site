@@ -35,7 +35,7 @@ function App() {
   return (
     <>
       <div className={!showMainContent ? "front-page" : "front-page-hidden"}>
-        {!showMainContent && <FrontPage setShowMainContent={() => setShowMainContent(true)} />}
+        {<FrontPage setShowMainContent={() => setShowMainContent(true)} />}
       </div>
       <div className={showMainContent ? "app" : "app-hidden"}>
         <MainContent />
