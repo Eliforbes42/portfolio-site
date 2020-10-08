@@ -93,9 +93,9 @@ const CronusPresentation = (props: Props) => {
   const repository = (
     <>
       <p>If you would like to check out the code, it's available at the repository given below!</p>
-      <div className={"repo-link"}>
-        <AnchorTag href={"https://github.com/TheEliForbes/cronus-monitoring"} className={"repo-link"}>
-          <GitHubLogo className={"page-switch-icon"} title={"Cronus Monitoring Repository"} />
+      <div style={{ display: "flex", alignSelf: "center", margin: "auto" }}>
+        <AnchorTag href={"https://github.com/TheEliForbes/cronus-monitoring"} className={"resource-link"}>
+          <GitHubLogo className={"repo-link"} title={"Cronus Monitoring Repository"} />
         </AnchorTag>
       </div>
     </>

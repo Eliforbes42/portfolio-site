@@ -1,13 +1,12 @@
 .card {
   @include card;
   @include flex-center-horizontal;
-  padding: 10px $standard-padding $standard-padding $standard-padding;
   align-self: center;
+  flex-direction: column;
+  padding: 10px $standard-padding $standard-padding $standard-padding;
   margin-top: 10vh;
-  margin-bottom: auto;
   width: 50vw;
   height: 60vh;
-  flex-direction: column;
   overflow: auto;
 
   &-image {
@@ -20,14 +19,12 @@
 }
 
 .terminal {
-  background-color: $front-page-terminal-background-color;
-  border-radius: 8px;
+  background-color: $card-background-color;
   width: 100%;
   height: 100%;
 
   &-nav-container {
     display: flex;
-    justify-content: flex-start;
     font-size: 16px;
     font-weight: bold;
     margin-top: 5px;
@@ -42,9 +39,7 @@
       padding: 10px 0;
 
       &-item {
-        height: 14px;
-        width: 14px;
-        border-radius: 7px;
+        @include icon-size(14px);
         margin: 0 3px;
         background-color: $app-text-color;
       }
@@ -63,8 +58,6 @@
     &-text {
       height: 100%;
       font-size: 20px;
-      //   padding-bottom: 3px;
-      //   border-bottom: 1px solid $app-text-color;
     }
   }
 }
@@ -77,55 +70,33 @@
   @include flex-center-vertical;
   justify-content: center;
 
-  $icon-length: 50px;
-  width: $icon-length;
-  height: $icon-length;
-  border-radius: calc(#{$icon-length} / 2);
-  background-color: $front-page-terminal-background-color;
+  @include icon-size(50px);
+  font-size: inherit;
+  background-color: $card-background-color;
   color: $app-text-color;
   margin: $standard-padding;
-  transition: 1s;
+  transition: 0.5s;
 
   &:hover {
-    color: $app-background-color;
     background-color: $app-hover-color;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.5s;
   }
 }
 
 .disabled {
   opacity: 0.5;
   &:hover {
-    background-color: $front-page-terminal-background-color;
+    background-color: $card-background-color;
     cursor: default;
   }
 }
 
 .repo-link {
+  $repo-icon-size: 200px;
   @include flex-center-horizontal;
   @include undecorated-link;
-
-  .page-switch-icon {
-    $icon-size: 400px;
-    @include icon-size($icon-size);
-    // font-size: $icon-size;
-    // height: $icon-size;
-    // width: $icon-size;
-    // border-radius: calc(#{$icon-size}/ 2);
-    margin-top: -1px;
-    svg {
-      height: calc(#{$icon-size}* 1.5);
-      width: calc(#{$icon-size}* 1.5);
-    }
-    &:hover {
-      background-color: black;
-      svg {
-        filter: invert(100%);
-        transition: 0.5s;
-      }
-    }
-  }
+  @include icon-size($repo-icon-size);
 }
 
 .resource-link {
@@ -136,6 +107,14 @@
   width: 40%;
   @include default-button;
   @include flex-center-horizontal;
+  &:hover {
+    .repo-link {
+      svg {
+        filter: invert(100%);
+        transition: 0.5s;
+      }
+    }
+  }
 }
 
 .basic-interface-graphic {
