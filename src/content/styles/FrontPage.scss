@@ -11,7 +11,7 @@
   opacity: 100;
   transition: 1s;
 
-  background-color: $front-page-background-color;
+  background-color: $app-background-color;
   background-image: url("../images/FrontPageBG.svg");
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
@@ -27,7 +27,7 @@
   }
 
   .front-page-terminal {
-    background-color: $front-page-terminal-background-color;
+    background-color: $card-background-color;
     padding: 0 15px 15px 15px;
     border-radius: 8px;
 
@@ -65,7 +65,7 @@
     @include icon-size($icon-length);
     font-size: inherit;
 
-    background-color: $front-page-terminal-background-color;
+    background-color: $card-background-color;
     color: $app-text-color;
     margin-top: $standard-padding;
     transition: 1s;
@@ -74,7 +74,7 @@
       color: $app-background-color;
       background-color: $app-hover-color;
       cursor: pointer;
-      transition: 1s;
+      transition: 0.5s;
     }
   }
 }

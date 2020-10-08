@@ -37,9 +37,9 @@
   }
 
   .ms-Button--default {
-    background-color: $app-nav-button-color;
+    background-color: $app-button-color;
     color: $app-header-background-color;
-    border-color: $app-nav-button-color;
+    border-color: $app-button-color;
     transition: 0.5s;
 
     &:hover {
@@ -52,7 +52,7 @@
   margin-right: 10px;
 
   .ms-ContextualMenu-item {
-    background-color: $app-nav-button-color;
+    background-color: $app-button-color;
     color: $app-text-color;
     transition: 0.5s;
     padding: 15px;

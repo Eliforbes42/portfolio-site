@@ -57,7 +57,7 @@
 
     .about-pane-hoverable {
       &:hover {
-        background-color: $about-pane-background-color;
+        background-color: $card-background-color;
         transition: 0.5s;
       }
     }

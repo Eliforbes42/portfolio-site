@@ -34,16 +34,16 @@ $padding-length: calc(#{$standard-padding} + 5px);
 
   .description-title {
     font: $about-title-font;
-    color: $about-pane-text-color;
+    color: $app-text-color;
     width: 100%;
     padding-bottom: 3px;
     margin: 10px 0;
-    border-bottom: 1px solid $about-pane-text-color;
+    border-bottom: 1px solid $app-text-color;
   }
 
   .description-text {
     font: $about-text-font;
-    color: $about-pane-text-color;
+    color: $app-text-color;
     width: 100%;
     margin-bottom: $standard-padding;
   }

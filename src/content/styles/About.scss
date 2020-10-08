@@ -25,7 +25,7 @@
   &-hoverable {
     @extend .about-pane;
     &:hover {
-      background-color: $about-hover-color;
+      background-color: $app-hover-color;
       transition: 0.5s;
     }
   }
@@ -39,7 +39,7 @@
       font: $about-title-font;
       padding: 3px 0;
       transition: 1s;
-      border-bottom: 1px solid $about-pane-text-color;
+      border-bottom: 1px solid $app-text-color;
     }
   }
 
