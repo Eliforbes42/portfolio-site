@@ -38,7 +38,7 @@ function App() {
         {<FrontPage setShowMainContent={() => setShowMainContent(true)} />}
       </div>
       <div className={showMainContent ? "app" : "app-hidden"}>
-        <MainContent />
+        <MainContent setUseScrollTransitions={setUseScrollTransitions} />
         <div className={"app-spacer"} />
       </div>
       {showMainContent && (

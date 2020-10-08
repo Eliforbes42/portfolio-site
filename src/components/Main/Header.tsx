@@ -5,7 +5,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { documentStrings } from "../../content/Strings";
 
-const Header = () => {
+interface HeaderProps {
+  setUseScrollTransitions: (useTransitions: boolean) => void;
+}
+
+const Header = (props: HeaderProps) => {
   const toSnakeCase = (text: string) => text.toLowerCase().replace(/\s/g, "_");
   const dropdownMenuProps = useConst<IContextualMenuProps>(() => ({
     shouldFocusOnMount: true,
@@ -21,9 +25,12 @@ const Header = () => {
   return (
     <header className="app-header">
       <Link to="/" className="logo-nav-item">
-        <img src="./CatamaranLogoWhite.png" className={"nav-logo"} alt={"Eli Forbes"} />
+        <img src="/CatamaranLogoWhite.png" className={"nav-logo"} alt={"Eli Forbes"} />
       </Link>
       <div className="document-menu-button">
+        <Link to="cronus" className={"cronus-monitoring-button"} onClick={() => props.setUseScrollTransitions(false)}>
+          <DefaultButton text={"Cronus Monitoring"} />
+        </Link>
         <DefaultButton text={"Documents"} menuProps={dropdownMenuProps} />
       </div>
     </header>
