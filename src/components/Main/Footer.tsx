@@ -1,5 +1,6 @@
 import { Checkbox, FontIcon } from "office-ui-fabric-react";
 import React from "react";
+import AnchorTag from "../Misc/AnchorTag";
 import PaperPlane from "../Misc/MailLogo";
 
 interface FooterProps {
@@ -19,14 +20,14 @@ const Footer = (props: FooterProps) => {
             </a>
           </div>
           <div className={"footer-link linkedin"}>
-            <a href="https://www.linkedin.com/in/the-eli-forbes/" target="_blank" rel="noopener noreferrer">
+            <AnchorTag href="https://www.linkedin.com/in/the-eli-forbes/">
               <FontIcon iconName="LinkedInLogo" className={"fabric-logo"} title={"LinkedIn"} />
-            </a>
+            </AnchorTag>
           </div>
           <div className={"footer-link github"}>
-            <a href="https://github.com/theeliforbes" target="_blank" rel="noopener noreferrer">
+            <AnchorTag href="https://github.com/theeliforbes">
               <FontIcon iconName="GitGraph" className={"fabric-logo"} title={"GitHub"} />
-            </a>
+            </AnchorTag>
           </div>
         </div>
       </div>
