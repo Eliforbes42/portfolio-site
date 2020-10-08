@@ -107,6 +107,10 @@
   width: 40%;
   @include default-button;
   @include flex-center-horizontal;
+  svg {
+    height: inherit;
+    width: inherit;
+  }
   &:hover {
     .repo-link {
       svg {
