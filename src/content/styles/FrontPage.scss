@@ -59,17 +59,15 @@
   }
 
   &-icon {
-    //Center Icon in Bubble
+    $icon-length: 50px;
     @include flex-center-vertical;
     @include flex-center-horizontal;
-    $icon-length: 50px;
+    @include icon-size($icon-length);
+    font-size: inherit;
 
     background-color: $front-page-terminal-background-color;
     color: $app-text-color;
     margin-top: $standard-padding;
-    width: $icon-length;
-    height: $icon-length;
-    border-radius: calc(#{$icon-length} / 2);
     transition: 1s;
 
     &:hover {

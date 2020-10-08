@@ -9,8 +9,7 @@
 
   .logo-nav-item {
     @include width-fit-content;
-    text-decoration: none;
-    outline: 0;
+    @include undecorated-link;
 
     .nav-logo {
       height: 50px;
@@ -31,18 +30,14 @@
     padding-right: 30px;
   }
 
-  .ms-Button--hasMenu {
+  .ms-Button--default {
     background-color: $app-nav-button-color;
     color: $app-header-background-color;
     border-color: $app-nav-button-color;
-    transition: 0.5as;
+    transition: 0.5s;
 
     &:hover {
-      background-color: $app-header-background-color;
-      border-color: $app-nav-button-color;
-      color: $app-nav-button-color;
-      box-shadow: $button-box-shadow;
-      transition: 0.5s;
+      @include default-button;
     }
   }
 }
@@ -62,10 +57,7 @@
       text-align: center;
 
       &:hover {
-        background-color: $app-header-background-color;
-        color: $app-nav-button-color;
-        transition: 0.5s;
-        box-shadow: $button-box-shadow;
+        @include default-button;
       }
     }
   }
