@@ -24,7 +24,7 @@ const Header = (props: HeaderProps) => {
 
   return (
     <header className="app-header">
-      <Link to="/" className="logo-nav-item">
+      <Link to="/" className="logo-nav-item" onClick={() => props.setUseScrollTransitions(true)}>
         <img src="/CatamaranLogoWhite.png" className={"nav-logo"} alt={"Eli Forbes"} />
       </Link>
       <div className="document-menu-button">
