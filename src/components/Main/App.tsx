@@ -5,7 +5,7 @@ import FrontPage from "./FrontPage";
 import MainContent from "./MainContent";
 
 function App() {
-  const [showMainContent, setShowMainContent] = useState(false);
+  const [showMainContent, setShowMainContent] = useState(true);
   const [useScrollTransitions, setUseScrollTransitions] = useState(true);
   console.log("useScrollTransitions", useScrollTransitions);
 

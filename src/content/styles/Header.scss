@@ -29,6 +29,12 @@
     @include flex-end;
     padding-right: 30px;
   }
+  .cronus-monitoring-button {
+    @include flex-center-vertical;
+    @include flex-end;
+    @include undecorated-link;
+    padding-right: 15px;
+  }
 
   .ms-Button--default {
     background-color: $app-nav-button-color;
