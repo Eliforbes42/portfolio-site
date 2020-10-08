@@ -18,8 +18,16 @@
 }
 
 //Firefox
-html {
+@mixin firefox-scrollbar {
   scrollbar-color: $app-scrollbar-color $app-scrollbar-track-color;
   scrollbar-width: thin;
+}
+
+html {
+  @include firefox-scrollbar;
   overflow-y: scroll;
+}
+
+.card {
+  @include firefox-scrollbar;
 }
