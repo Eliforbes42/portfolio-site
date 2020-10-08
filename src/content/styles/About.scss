@@ -46,7 +46,7 @@
   .about-content {
     padding-left: 10px;
     overflow: hidden;
-    transition: 1s;
+    transition: 0.5s;
     max-height: 10000px;
 
     &-collapsed {
@@ -75,10 +75,10 @@
   @include width-fit-content;
   @include height-fit-content;
   padding: 3px;
-  transition: 1s;
+  transition: 0.15s;
 }
 
 .rotated {
   transform: rotate(90deg);
-  transition: 1s;
+  transition: 0.15s;
 }
