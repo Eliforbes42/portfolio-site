@@ -39,7 +39,7 @@ export const aboutContent = {
     background: [
       `At a young age, Eli took an interest in graphic design, using tools such as GIMP, Photoshop, and Illustrator. 
       He soon created a gaming-related blog to improve upon his graphic design skills and put them to use for others within the game's community. 
-      During this time, he learned of HTML, CSS, and eventually JavaScript, and took a strong interest in the creation of visual experiences using such languages in combination with his graphic design efforts.
+      During this time, he learned of HTML, CSS, and eventually JavaScript, and soon took a strong interest in the creation of visual experiences using such languages in combination with his graphic design efforts.
       He took great pleasure in the challenge of learning and utilizing each language in conjunction with another, as it was like an intricate puzzle with an infinite number of possible end results.`,
 
       `During Middle School and High School, while general studies turned to occupy the bulk of his time, he continued to maintain an interest in graphic design. 
@@ -47,12 +47,12 @@ export const aboutContent = {
       This learning sparked a larger interest in coding, as well as the motivation for Eli to move into
     University and dive head-first into pursuing a Computer Science degree. He progressively became proficient in C, C++, and
     C#, while gaining experience in other languages such as SQL, Java, and Python. 
-    During this time, C became his strong suit, as he soon became a Teaching Assistant for the introductory programming class, and
-    eventually utilized the language to create both a File System and Operating System.`,
+    During this time, C became his strong suit, and he soon attained a Teaching Assistant position for the introductory programming class, even
+    eventually utilizing the language to create both a File System and Operating System.`,
 
       `Partway through University, during his time as a Teaching Assistant, Eli took back up his hobby of web
     development by creating a site intended to serve as a resources to students. This soon led further into the
-    creation of a web-based tool intended to promote task efficiency within a game. Testing his mettle, he
+    creation of a web-based tool intended to promote task efficiency within an online game. Testing his mettle, he
     created two different web applications using ASP.NET and React, along with a mobile application using
     Android Studio. While they weren't pictures of perfection by any means, he thoroughly enjoyed the challenge
     and learning experience that each iteration provided.`,
@@ -67,10 +67,10 @@ export const aboutContent = {
     In addition to all the various technical learnings, participation in group projects and clubs provided continuous opportunities for growth in many softer skills such as communication, teamwork, flexibility, and much more.`,
 
       `To this day, Eli dilligently pursues his various hobbies, and continues to enjoy each and every challenge of being a Software Engineer, as there's always something new
-    to learn..`,
+    to learn!`,
     ],
   },
-  hobbies: { title: "Hobbies", hobbies: ["Graphic Design", "Music Production", "Strategy Games", "Longboarding"] },
+  hobbies: { title: "Hobbies", hobbies: ["Strategy Games", "Graphic Design", "Music Production", "Longboarding"] },
 };
 export const overviewContent = {
   title: "Overview",
