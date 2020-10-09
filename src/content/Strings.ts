@@ -62,7 +62,7 @@ export const aboutContent = {
     Upon conclusion of the internship, Eli was resolved to become a full time web developer.`,
 
       `During the remaining time at University, he strove to learn as much as possible through his coursework, as well as his work in various group projects and clubs. 
-    Some courses further exposed him to multiple other programming languages, both old and new. 
+    Some courses further exposed him to multiple other older programming languages, for example: Lisp, ML, and Assembly. 
     While others provided him with experience in various newer technlogogies, such as Containerization through Docker and Kubernetes, and exposure to Cloud Computing through both Google Cloud Platform and Skytap Cloud.
     In addition to all the various technical learnings, participation in group projects and clubs provided continuous opportunities for growth in many softer skills such as communication, teamwork, flexibility, and much more.`,
 
