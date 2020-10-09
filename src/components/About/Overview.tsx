@@ -26,7 +26,7 @@ const Overview = () => {
       </div>
     </div>
   ) : (
-    <div>
+    <div className={"about-page-sub-container"}>
       <div className={"profile-picture-container-collapsed"}>
         <img className={"invisible"} src={profilePicture} alt="Eli Forbes" />
         <FontIcon

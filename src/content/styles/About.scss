@@ -7,18 +7,22 @@
 }
 
 .about-description-container {
-  padding: $standard-padding;
+  display: flex;
   width: 100%;
-
+  @include height-fit-content;
+  .about-description-content {
+    padding: $standard-padding $standard-padding $standard-padding 0;
+    flex-direction: column;
+  }
   .last-about-pane {
-    margin-bottom: calc(#{$footer-height} + #{$standard-padding});
+    margin-bottom: calc(#{$footer-height} + #{$header-height} + #{$standard-padding} - 20px);
   }
 }
 
 .about-pane {
   @include card;
   padding: 5px 5px 8px 5px;
-  margin: 5px;
+  margin: 5px 5px 5px 0;
   transition: 0.5s;
   cursor: pointer;
 

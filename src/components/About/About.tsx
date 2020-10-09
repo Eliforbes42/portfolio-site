@@ -42,11 +42,17 @@ const About = () => {
 
   return (
     <div className="about-page-container">
-      <Overview />
       <div className="about-description-container">
-        {content.map((section, i) =>
-          i === content.length - 1 ? <AboutPane {...section} className="last-about-pane" /> : <AboutPane {...section} />
-        )}
+        <Overview />
+        <div className={"about-description-content"}>
+          {content.map((section, i) =>
+            i === content.length - 1 ? (
+              <AboutPane {...section} className="last-about-pane" />
+            ) : (
+              <AboutPane {...section} />
+            )
+          )}
+        </div>
       </div>
     </div>
   );

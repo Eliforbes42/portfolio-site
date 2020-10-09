@@ -4,21 +4,31 @@ $padding-length: calc(#{$standard-padding} + 5px);
 @mixin profile-picture-container-common {
   @include card;
   display: flex;
+  margin-right: $standard-padding;
+  margin-top: calc(#{$standard-padding} + 5px);
   transition: 1s;
+}
+
+.about-page-sub-container {
+  @include height-fit-content;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 .profile-picture-container {
   @include profile-picture-container-common;
   flex-wrap: wrap;
+  $container-height: calc(100vh - #{$header-height} - #{$footer-height} - #{$standard-padding * 2} - 10px);
   width: calc(#{$profile-picture-length} + 100px);
-  height: calc(100% - (#{$padding-length} * 2));
-  margin: $padding-length 0 $padding-length $padding-length;
+  height: $container-height;
+  margin-left: $standard-padding;
   padding: 0 $standard-padding;
 
   &-collapsed {
     @include profile-picture-container-common;
     @include width-fit-content;
-    height: 100%;
+    height: $container-height;
     padding: 0 5px;
     border-radius: 0 $card-border-radius $card-border-radius 0;
   }
