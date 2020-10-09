@@ -22,10 +22,10 @@ const CronusPresentation = (props: Props) => {
     <>
       <p>
         Cronus Monitoring is a distributed application capable of quick deployment to Kubernetes Clusters, which
-        aggregates Kubernetes, System, and Application metrics into a Time Series Database, visualizes such metrics, and
-        allows customizable alerting on them.
+        aggregates Kubernetes, System, and Application metrics into a Time Series Database, and enables visualization
+        and customizable alerting on such metrics.
       </p>
-      The architecture is made up of multiple components with varying purposes:
+      The architecture is made up of multiple main components with varying purposes:
       <div className={"card-content-flex"}>
         <ul>
           <li>Data Ingestion</li>
@@ -65,7 +65,10 @@ const CronusPresentation = (props: Props) => {
   );
   const development = (
     <>
-      <p>Various pieces of software were utilized during development and testing of the stack</p>
+      <p>
+        Various pieces of software were utilized during development of the stack, each with their own particular
+        purpose.
+      </p>
       <div className={"card-content-flex"}>
         <ul>
           <li>Deployment</li>
@@ -107,7 +110,8 @@ const CronusPresentation = (props: Props) => {
     <>
       <p>
         Many system metrics are gathered via Telegraf, such as CPU, Memory, Disk, I/O Wait, and more! The following is
-        an example dashboard containing some of the system metrics gathered from a particular node.
+        an example dashboard containing some of the system metrics gathered from a particular node in the Kubernetes
+        cluster.
       </p>
       <img src="/cronus/SystemMetrics.png" alt="System Metrics" className={"card-image width-70"} />
     </>
@@ -116,7 +120,8 @@ const CronusPresentation = (props: Props) => {
     <>
       <p>
         Telegraf can gather various application metrics depending on the given configuration. The following dashboard
-        shows HTTP Response metrics from an example application deployed alongside the stack.
+        shows HTTP Response metrics from an example application deployed in the Kubernetes cluster alongside the
+        monitoring stack.
       </p>
       <img src="/cronus/AppMetrics.png" alt="App Metrics" className={"card-image"} />
     </>

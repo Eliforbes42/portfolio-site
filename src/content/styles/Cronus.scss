@@ -4,9 +4,9 @@
   align-self: center;
   flex-direction: column;
   padding: 10px $standard-padding $standard-padding $standard-padding;
-  margin-top: 10vh;
+  margin-top: 5vh;
   width: 50vw;
-  height: 60vh;
+  height: 65vh;
   overflow: auto;
 
   &-image {
@@ -141,4 +141,7 @@
 
 .card-content-flex {
   display: flex;
+  ul {
+    margin-top: 0;
+  }
 }
