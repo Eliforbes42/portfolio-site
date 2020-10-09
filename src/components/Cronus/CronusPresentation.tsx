@@ -11,6 +11,7 @@ const CronusPresentation = (props: Props) => {
   const subtitles = [
     "Overview",
     "Architecture",
+    "Development",
     "System Metrics",
     "Application Metrics",
     "Alerting",
@@ -60,6 +61,46 @@ const CronusPresentation = (props: Props) => {
         throughout the system.
       </p>
       <img src="/cronus/InterfaceGraphic.bmp" alt="Interface Graphic" className={"card-image"} />
+    </>
+  );
+  const development = (
+    <>
+      <p>Various pieces of software were utilized during development and testing of the stack</p>
+      <div className={"card-content-flex"}>
+        <ul>
+          <li>Deployment</li>
+          <ul>
+            <li>Helm</li>
+          </ul>
+          <li>CI/CD</li>
+          <ul>
+            <li>Jenkins</li>
+          </ul>
+          <li>Unit Testing</li>
+          <ul>
+            <li>Kapacitor-Unit</li>
+            <li>Helm Unit-Test</li>
+          </ul>
+          <li>Integration Testing</li>
+          <ul>
+            <li>Helm Test</li>
+          </ul>
+
+          <li>Functional Testing</li>
+          <ul>
+            <li>Selenium Webdriver</li>
+          </ul>
+          <li>Performance Testing</li>
+          <ul>
+            <li>Siege</li>
+          </ul>
+          <li>Environment Hosting</li>
+          <ul>
+            <li>Skytap Cloud</li>
+          </ul>
+        </ul>
+        <img src="/cronus/DevelopmentTech.png" alt="Basic Interface Graphic" className={"card-image width-40"} />
+      </div>
     </>
   );
   const systemMetrics = (
@@ -122,7 +163,7 @@ const CronusPresentation = (props: Props) => {
       </div>
     </>
   );
-  const content = [overview, architecture, systemMetrics, appMetrics, alerting, repository, resources];
+  const content = [overview, architecture, development, systemMetrics, appMetrics, alerting, repository, resources];
   return (
     <>
       <div className="card">
