@@ -12,6 +12,7 @@ interface HeaderProps {
 const Header = (props: HeaderProps) => {
   const toSnakeCase = (text: string) => text.toLowerCase().replace(/\s/g, "_");
   const dropdownMenuProps = useConst<IContextualMenuProps>(() => ({
+    isBeakVisible: true,
     shouldFocusOnMount: true,
     items: documentStrings.map((document) => ({
       key: toSnakeCase(document),
