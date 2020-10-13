@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9aabd34e.chunk.css",
+    "main.css": "/static/css/main.4a8a912f.chunk.css",
     "main.js": "/static/js/main.3fe8c74c.chunk.js",
     "main.js.map": "/static/js/main.3fe8c74c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
@@ -8,9 +8,9 @@
     "static/js/2.ab4af2fb.chunk.js": "/static/js/2.ab4af2fb.chunk.js",
     "static/js/2.ab4af2fb.chunk.js.map": "/static/js/2.ab4af2fb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9db371a3fa62d5799ff9cce418d90a8c.js": "/precache-manifest.9db371a3fa62d5799ff9cce418d90a8c.js",
+    "precache-manifest.b6f22fab3664947e71ae31e10cf8a5bd.js": "/precache-manifest.b6f22fab3664947e71ae31e10cf8a5bd.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.9aabd34e.chunk.css.map": "/static/css/main.9aabd34e.chunk.css.map",
+    "static/css/main.4a8a912f.chunk.css.map": "/static/css/main.4a8a912f.chunk.css.map",
     "static/js/2.ab4af2fb.chunk.js.LICENSE.txt": "/static/js/2.ab4af2fb.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/Inconsolata-VariableFont_wdth,wght.3701d12f.ttf",
     "static/media/profilePicture.jpg": "/static/media/profilePicture.9b2a6bb1.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/js/2.ab4af2fb.chunk.js",
-    "static/css/main.9aabd34e.chunk.css",
+    "static/css/main.4a8a912f.chunk.css",
     "static/js/main.3fe8c74c.chunk.js"
   ]
 }
