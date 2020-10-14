@@ -5,8 +5,18 @@ import { overviewContent } from "../../content/Strings";
 
 const Overview = () => {
   const [isExpanded, setIsExpanded] = useState(true);
-  const [showExpandButton] = useState(window.innerWidth > 1024);
+  const [showExpandButton, setShowExpandButton] = useState(window.innerWidth > 1024);
   const toggleExpansion = () => setIsExpanded(!isExpanded);
+
+  const handleResize = (e: any) => {
+    console.log("e", e);
+    if (e.target.innerWidth > 1024) {
+      setShowExpandButton(true);
+    } else {
+      setShowExpandButton(false);
+    }
+  };
+  window.addEventListener("resize", handleResize, true);
 
   return isExpanded ? (
     <div className={"about-page-sub-container"}>
