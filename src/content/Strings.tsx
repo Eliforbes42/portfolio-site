@@ -49,10 +49,13 @@ export const aboutContent = {
       `During Middle School and High School, while general studies turned to occupy the bulk of his time, he continued to maintain an interest in graphic design. 
       In High School he got further into programming by learning the basics of coding in C and Java, for use in the Robotics Club. 
       This learning sparked a larger interest in coding, as well as the motivation for Eli to move into
-    University and dive head-first into pursuing a Computer Science degree. He progressively became proficient in C, C++, and
+    University and dive head-first into pursuing a Computer Science degree. `,
+
+      `At university, he progressively became proficient in C, C++, and
     C#, while gaining experience in other languages such as SQL, Java, and Python. 
-    During this time, C became his strong suit, and he soon attained a Teaching Assistant position for the introductory programming class in order to share and strengthen his knowledge on the language, even
-    eventually utilizing C to create both a File System and Operating System.`,
+    During this time, C became his strong suit, and he soon attained a Teaching Assistant position 
+    for the introductory programming class in order to share and strengthen his knowledge on the language, 
+    and later on even utilized C to create both a File System and Operating System.`,
 
       `Partway through University, during his time as a Teaching Assistant, Eli took back up his hobby of web
     development by creating a site intended to serve as a resources to students. This soon led further into the
@@ -139,8 +142,8 @@ export const cronusContent = {
   architecture: (
     <>
       <p>
-        The following is a more detailed diagram which contains each component's purpose, and depicts the flow of data
-        throughout the system.
+        The following is a more detailed diagram which contains each component's purpose, and depicts the data flowing
+        between each component within the system.
       </p>
       <img src="/cronus/InterfaceGraphic.bmp" alt="Interface Graphic" className={"card-image"} />
     </>
@@ -157,7 +160,7 @@ export const cronusContent = {
           <ul>
             <li>Helm</li>
           </ul>
-          <li>CI/CD</li>
+          <li>CI/CD Pipeline</li>
           <ul>
             <li>Jenkins</li>
           </ul>
@@ -201,9 +204,9 @@ export const cronusContent = {
   appMetrics: (
     <>
       <p>
-        Telegraf can gather various application metrics depending on the given configuration. The following dashboard
-        shows HTTP Response metrics from an example application deployed in the Kubernetes cluster alongside the
-        monitoring stack.
+        Telegraf can also gather various application metrics depending on the given configuration. The following
+        dashboard shows HTTP Response metrics from an example application deployed alongside the monitoring stack within
+        the Kubernetes cluster.
       </p>
       <img src="/cronus/AppMetrics.png" alt="App Metrics" className={"card-image"} />
     </>
