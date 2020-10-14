@@ -61,6 +61,7 @@
       padding: 0 10px;
       border-radius: 3px;
       text-align: center;
+      transition: 0.5s;
 
       &:hover {
         @include default-button;
