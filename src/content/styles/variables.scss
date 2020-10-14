@@ -61,7 +61,7 @@ $profile-picture-radius: $profile-picture-length/2;
 
 //Fonts
 $about-title-font: bold 26px "Catamaran";
-$about-text-font: calc(10px + 2vmin) "Inconsolata";
+$about-text-font: calc(10px + 2vmin) "Consolas";
 
 //Common Classes
 @mixin flex-center-horizontal {
