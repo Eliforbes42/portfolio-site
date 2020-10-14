@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64d66a957dc5c02eeb5fc80174fb7c04",
+    "revision": "d0e63e637c6ef9dee8316d5c2067590d",
     "url": "/index.html"
   },
   {
-    "revision": "d5f5a826f7caafe0833e",
-    "url": "/static/css/main.4977d8c8.chunk.css"
+    "revision": "705175e2c76e6c084bfa",
+    "url": "/static/css/main.b8303ebc.chunk.css"
   },
   {
     "revision": "9df9995de98013c385cf",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.0f44b1f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d5f5a826f7caafe0833e",
+    "revision": "705175e2c76e6c084bfa",
     "url": "/static/js/main.46effd9e.chunk.js"
   },
   {
@@ -33,7 +33,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "3701d12f4e47a6214ef41b3273b5de5a",
-    "url": "/static/media/Inconsolata-VariableFont_wdth,wght.3701d12f.ttf"
+    "url": "/static/media/Inconsolata-VariableFont_wdth_wght.3701d12f.ttf"
   },
   {
     "revision": "9b2a6bb17b210fcaec503e79a4e2fa49",
