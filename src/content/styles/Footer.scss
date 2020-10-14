@@ -1,5 +1,8 @@
 @import "./variables";
 
+$hover-color: $app-header-background-color;
+$hover-background-color: $app-button-color;
+
 .app-footer {
   background-color: $app-header-background-color;
   color: $app-text-color;
@@ -33,17 +36,17 @@
           color: $app-header-background-color;
           transition: 0.5s;
         }
-        background-color: $app-button-color;
-        border-color: $app-button-color;
+        background-color: $hover-background-color;
+        border-color: $hover-background-color;
         transition: 0.5s;
 
         &:hover {
-          background-color: $app-hover-color;
-          border-color: $app-hover-color;
+          background-color: darken($hover-background-color, 20%);
+          border-color: darken($hover-background-color, 20%);
           transition: 0.5s;
 
           .ms-Checkbox-checkmark {
-            color: $app-text-color;
+            color: $hover-color;
             transition: 0.5s;
           }
         }
@@ -78,18 +81,17 @@
   }
 
   &:hover {
-    background-color: $app-hover-color;
+    background-color: $hover-background-color;
     transition: 0.5s;
-
     svg polygon,
     svg line {
-      fill: $app-text-color;
-      stroke: $app-hover-color;
+      fill: $hover-color;
+      stroke: $hover-background-color;
     }
 
     a,
     .fabric-logo {
-      color: $app-text-color;
+      color: $hover-color;
       @include undecorated-link;
     }
   }

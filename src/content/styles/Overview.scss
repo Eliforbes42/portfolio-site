@@ -65,6 +65,7 @@ $padding-length: calc(#{$standard-padding} + 5px);
   color: $app-text-color;
 
   &:hover {
+    background-color: $app-hover-color;
     cursor: pointer;
   }
 }
