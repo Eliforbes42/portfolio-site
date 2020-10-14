@@ -30,6 +30,10 @@ $hover-background-color: $app-button-color;
     @include flex-center-vertical;
     padding-right: $standard-padding;
 
+    .return {
+      margin-left: 10px;
+    }
+
     .ms-Checkbox.is-checked.is-enabled {
       .ms-Checkbox-checkbox {
         .ms-Checkbox-checkmark {
