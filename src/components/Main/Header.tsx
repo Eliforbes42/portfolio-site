@@ -29,7 +29,10 @@ const Header = (props: HeaderProps) => {
         <img src="/CatamaranLogoWhite.png" className={"nav-logo"} alt={"Eli Forbes"} />
       </Link>
       <div className="document-menu-button">
-        <Link to="cronus" className={"cronus-monitoring-button"} onClick={() => props.setUseScrollTransitions(false)}>
+        <Link to="/" className={"cronus-monitoring-button"} onClick={() => props.setUseScrollTransitions(true)}>
+          <DefaultButton text={"About Me"} />
+        </Link>
+        <Link to="/cronus" className={"cronus-monitoring-button"} onClick={() => props.setUseScrollTransitions(false)}>
           <DefaultButton text={"Cronus Monitoring"} />
         </Link>
         <DefaultButton text={"Documents"} menuProps={dropdownMenuProps} />
