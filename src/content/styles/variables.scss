@@ -61,6 +61,10 @@ $profile-picture-radius: $profile-picture-length/2;
 
 //Fonts
 $about-title-font: bold 26px "Catamaran";
+@mixin inconsolata-font {
+  font-size: calc(10px + 2vmin);
+  font-family: "Inconsolata";
+}
 
 //Common Classes
 @mixin flex-center-horizontal {

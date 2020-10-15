@@ -52,8 +52,7 @@ $padding-length: calc(#{$standard-padding} + 5px);
   }
 
   .description-text {
-    font-size: calc(10px + 2vmin);
-    font-family: "Inconsolata";
+    @include inconsolata-font;
     color: $app-text-color;
     width: 100%;
     margin-bottom: $standard-padding;
