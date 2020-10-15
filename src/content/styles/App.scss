@@ -10,11 +10,11 @@
 
 @font-face {
   font-family: "Inconsolata";
-  src: local("Inconsolata"), url("./fonts/Inconsolata-VariableFont_wdth_wght.ttf") format("truetype");
+  src: url("./fonts/Inconsolata-VariableFont_wdth_wght.ttf") format("truetype");
 }
 @font-face {
   font-family: "Catamaran";
-  src: local("Catamaran"), url("./fonts/Catamaran-VariableFont_wght.ttf") format("truetype");
+  src: url("./fonts/Catamaran-VariableFont_wght.ttf") format("truetype");
 }
 
 html,

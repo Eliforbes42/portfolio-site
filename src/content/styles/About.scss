@@ -59,7 +59,8 @@
     }
 
     .about-text {
-      font: $about-text-font;
+      font-size: calc(10px + 2vmin);
+      font-family: "Inconsolata";
 
       ul {
         margin-top: 10px;
