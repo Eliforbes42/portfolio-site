@@ -127,3 +127,27 @@
     width: auto;
   }
 }
+
+@media (max-height: 575px) {
+  .profile-picture-container {
+    padding: $standard-padding;
+    display: flex !important;
+    @include height-fit-content;
+    .profile-picture {
+      margin: 13px;
+    }
+    .description-container {
+      @include height-fit-content;
+      width: 50vw;
+      padding-bottom: 0px;
+      padding-left: $standard-padding;
+      .description-text {
+        margin-bottom: 0;
+      }
+    }
+    img {
+      height: 150px !important;
+      width: auto !important;
+    }
+  }
+}
