@@ -47,19 +47,19 @@ export const aboutContent = {
       During this time, he learned of HTML, CSS, and eventually JavaScript, and soon took a strong interest in the creation of visual experiences using such languages in combination with his graphic design efforts.
       He took great pleasure in the challenge of learning and utilizing each language in conjunction with another, as it was like an intricate puzzle with an infinite number of possible end results.`,
 
-      `During Middle School and High School, while general studies turned to occupy the bulk of his time, he continued to maintain an interest in graphic design. 
+      `During Middle School and High School, while general studies turned to occupy the bulk of his time, he continued to maintain an interest in game-related graphic design. 
       In High School he got further into programming by learning the basics of coding in C and Java, for use in the Robotics Club. 
       This learning sparked a larger interest in coding, as well as the motivation for Eli to move into
     University and dive head-first into pursuing a Computer Science degree. `,
 
       `At university, he progressively became proficient in C, C++, and
-    C#, while gaining experience in other languages such as SQL, Java, and Python. 
+    C#, while gaining experience in other useful languages such as SQL, Java, and Python. 
     During this time, C became his strong suit, and he soon attained a Teaching Assistant position 
     for the introductory programming class in order to share and strengthen his knowledge on the language, 
-    and later on even utilized C to create both a File System and Operating System.`,
+    and later on he even utilized C to create both a File System and Operating System.`,
 
       `Partway through University, during his time as a Teaching Assistant, Eli took back up his hobby of web
-    development by creating a site intended to serve as a resources to students. This soon led further into the
+    development by creating a website intended to serve as a resources to students. This soon rekindled his web-development hobby, and led into the
     creation of a web-based tool intended to promote task efficiency within an online game. Testing his mettle, he
     created two different web applications using ASP.NET and React, along with a mobile application using
     Android Studio. While they weren't quite pictures of perfection, he thoroughly enjoyed the challenge
@@ -70,7 +70,7 @@ export const aboutContent = {
     Upon conclusion of the internship, having found the experience to be what he truly wanted to commit to doing in the future, Eli was resolved to become a full time web developer.`,
 
       `During the remaining time at University, he strove to learn as much as possible through his coursework, as well through various group projects and clubs. 
-    Some courses further exposed him to multiple other older programming languages, for example: Lisp, ML, and Assembly. 
+    Some courses further exposed him to multiple older programming languages, for example: Lisp, ML, and Assembly. 
     While others provided him with experience in various newer technlogogies, such as Containerization through Docker and Kubernetes, and exposure to Cloud Computing through both Google Cloud Platform and Skytap Cloud.
     In addition to all the various technical learnings, participation in group projects and clubs provided continuous opportunities for growth in many softer skills such as communication, teamwork, flexibility, and much more.`,
 
