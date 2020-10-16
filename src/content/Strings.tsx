@@ -91,6 +91,34 @@ export const resourceValues = [
   { href: "https://www.influxdata.com/time-series-platform/kapacitor/", text: "Kapacitor" },
   { href: "https://grafana.com/", text: "Grafana" },
 ];
+
+const cronusOverviewData = {
+  "Data Ingestion": ["Kube-State-Metrics", "Telegraf"],
+  "Data Storage": ["InfluxDB"],
+  "Alerting & Data Aggregation": ["Kapacitor"],
+  Visualization: ["Grafana"],
+};
+const cronusDevelopmentData = {
+  Deployment: ["Helm"],
+  "CI/CD Pipeline": ["Jenkins"],
+  "Unit Testing": ["Kapacitor-Unit", "Helm Unit-Test"],
+  "Integration Testing": ["Helm Test"],
+  "Functional Testing": ["Selenium Webdriver"],
+  "Performance Testing": ["Siege"],
+  "Environment Hosting": ["Skytap Cloud"],
+};
+const cronusListHelper = (data: { [key: string]: string[] }): JSX.Element[] => {
+  return Object.keys(data).map((key) => (
+    <>
+      <li>{key}</li>
+      <ul>
+        {data[key].map((item: string) => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    </>
+  ));
+};
 export const cronusContent = {
   title: "Cronus Monitoring",
   subtitles: [
@@ -112,25 +140,7 @@ export const cronusContent = {
       </p>
       The architecture is made up of multiple main components with varying purposes:
       <div className={"card-content-flex"}>
-        <ul>
-          <li>Data Ingestion</li>
-          <ul>
-            <li>Kube-State-Metrics</li>
-            <li>Telegraf</li>
-          </ul>
-          <li>Data Storage</li>
-          <ul>
-            <li>InfluxDB</li>
-          </ul>
-          <li>{"Alerting & Data Aggregation"}</li>
-          <ul>
-            <li>Kapacitor</li>
-          </ul>
-          <li>Visualization</li>
-          <ul>
-            <li>Grafana</li>
-          </ul>
-        </ul>
+        <ul>{cronusListHelper(cronusOverviewData)}</ul>
         <img
           src="/cronus/BasicInterfaceGraphic.png"
           alt="Basic Interface Graphic"
@@ -155,38 +165,7 @@ export const cronusContent = {
         purpose.
       </p>
       <div className={"card-content-flex"}>
-        <ul>
-          <li>Deployment</li>
-          <ul>
-            <li>Helm</li>
-          </ul>
-          <li>CI/CD Pipeline</li>
-          <ul>
-            <li>Jenkins</li>
-          </ul>
-          <li>Unit Testing</li>
-          <ul>
-            <li>Kapacitor-Unit</li>
-            <li>Helm Unit-Test</li>
-          </ul>
-          <li>Integration Testing</li>
-          <ul>
-            <li>Helm Test</li>
-          </ul>
-
-          <li>Functional Testing</li>
-          <ul>
-            <li>Selenium Webdriver</li>
-          </ul>
-          <li>Performance Testing</li>
-          <ul>
-            <li>Siege</li>
-          </ul>
-          <li>Environment Hosting</li>
-          <ul>
-            <li>Skytap Cloud</li>
-          </ul>
-        </ul>
+        <ul>{cronusListHelper(cronusDevelopmentData)}</ul>
         <img src="/cronus/DevelopmentTech.png" alt="Basic Interface Graphic" className={"card-image width-40"} />
       </div>
     </>
