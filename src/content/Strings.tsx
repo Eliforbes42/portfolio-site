@@ -30,7 +30,7 @@ export const aboutContent = {
     skills: [
       { area: "Front-End", skills: ["HTML", "CSS", "JavaScript/TypeScript", "React", "Redux"] },
       { area: "Back-End", skills: ["C#", "ASP.NET Core", "Java", "SQL"] },
-      { area: "Testing", skills: ["Cypress", "Storybook", "Jest", "Selenium WebDriver"] },
+      { area: "Testing", skills: ["Cypress", "Storybook", "Jest", "JUnit", "Selenium WebDriver"] },
       { area: "CI/CD", skills: ["Azure DevOps Pipelines", "Jenkins"] },
       { area: "Cloud Computing", skills: ["Azure", "Skytap Cloud", "Google Cloud Platform"] },
       { area: "Containerization", skills: ["Docker", "Kubernetes"] },
