@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "17ea10d41550ed8a8aebded28f013b90",
+    "revision": "4ac6e42adf8c6d8cdba4704c22818168",
     "url": "/index.html"
   },
   {
-    "revision": "b9ee00103c4e7947d571",
-    "url": "/static/css/main.ce987a44.chunk.css"
+    "revision": "c6f5faa6b8516dc424f7",
+    "url": "/static/css/main.3cbcdef6.chunk.css"
   },
   {
     "revision": "9df9995de98013c385cf",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.0f44b1f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b9ee00103c4e7947d571",
+    "revision": "c6f5faa6b8516dc424f7",
     "url": "/static/js/main.a10319a0.chunk.js"
   },
   {
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "acabb66a2f0ab94c9f004e228579dab7",
     "url": "/static/media/Catamaran-VariableFont_wght.acabb66a.ttf"
+  },
+  {
+    "revision": "5715d3f0bfcd28a4e008721a66118fe2",
+    "url": "/static/media/Consolas.5715d3f0.ttf"
   },
   {
     "revision": "c32f90bdc6737ddf0e9be7551b91aeee",
