@@ -151,3 +151,9 @@
     }
   }
 }
+
+@media (max-width: 601px) and (orientation: landscape) {
+  .description-container {
+    padding-left: 0px !important;
+  }
+}
