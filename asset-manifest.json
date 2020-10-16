@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3cbcdef6.chunk.css",
-    "main.js": "/static/js/main.a10319a0.chunk.js",
-    "main.js.map": "/static/js/main.a10319a0.chunk.js.map",
+    "main.css": "/static/css/main.d055d8eb.chunk.css",
+    "main.js": "/static/js/main.5fe428a3.chunk.js",
+    "main.js.map": "/static/js/main.5fe428a3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
     "static/js/2.0f44b1f1.chunk.js": "/static/js/2.0f44b1f1.chunk.js",
     "static/js/2.0f44b1f1.chunk.js.map": "/static/js/2.0f44b1f1.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.71075bad1b0aba312c0b1e5ab397294b.js": "/precache-manifest.71075bad1b0aba312c0b1e5ab397294b.js",
+    "precache-manifest.2ab065ba5f47f4c7b7e068152bcefe41.js": "/precache-manifest.2ab065ba5f47f4c7b7e068152bcefe41.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.3cbcdef6.chunk.css.map": "/static/css/main.3cbcdef6.chunk.css.map",
+    "static/css/main.d055d8eb.chunk.css.map": "/static/css/main.d055d8eb.chunk.css.map",
     "static/js/2.0f44b1f1.chunk.js.LICENSE.txt": "/static/js/2.0f44b1f1.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/static/media/Inconsolata-VariableFont_wdth_wght.3701d12f.ttf",
     "static/media/profilePicture.jpg": "/static/media/profilePicture.9b2a6bb1.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/js/2.0f44b1f1.chunk.js",
-    "static/css/main.3cbcdef6.chunk.css",
-    "static/js/main.a10319a0.chunk.js"
+    "static/css/main.d055d8eb.chunk.css",
+    "static/js/main.5fe428a3.chunk.js"
   ]
 }
