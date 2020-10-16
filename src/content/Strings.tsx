@@ -1,6 +1,7 @@
 import React from "react";
 import AnchorTag from "../components/Misc/AnchorTag";
 import GitHubLogo from "../components/Misc/GitHubLogo";
+import { mapToSubListItems } from "../components/Misc/Helpers";
 
 export const documentStrings = ["Resume", "Transcript", "Cover Letter", "Letter of Recommendation"];
 export const navStrings = ["About", "Documents"];
@@ -107,18 +108,6 @@ const cronusDevelopmentData = {
   "Performance Testing": ["Siege"],
   "Environment Hosting": ["Skytap Cloud"],
 };
-const cronusListHelper = (data: { [key: string]: string[] }): JSX.Element[] => {
-  return Object.keys(data).map((key) => (
-    <>
-      <li>{key}</li>
-      <ul>
-        {data[key].map((item: string) => (
-          <li>{item}</li>
-        ))}
-      </ul>
-    </>
-  ));
-};
 export const cronusContent = {
   title: "Cronus Monitoring",
   subtitles: [
@@ -140,7 +129,7 @@ export const cronusContent = {
       </p>
       The architecture is made up of multiple main components with varying purposes:
       <div className={"card-content-flex"}>
-        <ul>{cronusListHelper(cronusOverviewData)}</ul>
+        <ul>{mapToSubListItems(cronusOverviewData)}</ul>
         <img
           src="/cronus/BasicInterfaceGraphic.png"
           alt="Basic Interface Graphic"
@@ -165,7 +154,7 @@ export const cronusContent = {
         purpose.
       </p>
       <div className={"card-content-flex"}>
-        <ul>{cronusListHelper(cronusDevelopmentData)}</ul>
+        <ul>{mapToSubListItems(cronusDevelopmentData)}</ul>
         <img src="/cronus/DevelopmentTech.png" alt="Basic Interface Graphic" className={"card-image width-40"} />
       </div>
     </>

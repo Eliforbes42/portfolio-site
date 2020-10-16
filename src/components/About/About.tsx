@@ -1,10 +1,10 @@
 import React from "react";
 import { aboutContent } from "../../content/Strings";
+import { mapToListItems } from "../Misc/Helpers";
 import AboutPane from "./AboutPane";
 import Overview from "./Overview";
 
 const About = () => {
-  const mapToListItems = (items: string[]) => items.map((item) => <li>{item}</li>);
   const content = [
     aboutContent.education,
     {
