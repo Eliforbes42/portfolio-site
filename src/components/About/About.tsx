@@ -6,7 +6,7 @@ import Overview from "./Overview";
 
 const About = () => {
   const content = [
-    aboutContent.education,
+    { title: aboutContent.education.title, content: <p>{aboutContent.education.content}</p> },
     {
       title: aboutContent.qualities.title,
       content: <ul>{mapToListItems(aboutContent.qualities.qualities)}</ul>,
