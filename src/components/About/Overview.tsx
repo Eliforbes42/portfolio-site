@@ -9,7 +9,6 @@ const Overview = () => {
   const toggleExpansion = () => setIsExpanded(!isExpanded);
 
   const handleResize = (e: any) => {
-    console.log("e", e);
     if (e.target.innerWidth > 1024) {
       setShowExpandButton(true);
     } else {
